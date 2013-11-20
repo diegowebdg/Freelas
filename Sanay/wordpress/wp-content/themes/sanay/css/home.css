@@ -1,0 +1,116 @@
+/*
+Theme Name: Sanay
+Theme URI: http://www.sanay.com.br/
+Description: Sanay | Desenvolvimento Imobiliário
+Author: Diego Rocha
+Author URI: http://www.diegowebdg.com.br
+*/
+
+/*Home*/
+
+/*Slider*/
+.slider{ height: 458px;}
+.slider .slide-info, .slider img{float:left;}
+.slider *{text-transform:uppercase; display:block;}
+.slider .slide-info{padding:15px 89px;}
+.slider .slide-info strong{font:bold 2em Oswald, Arial, sans-serif; color: #FFF;}
+.slider .slide-info span{margin:15px 0; font:italic 1.2em Oswald, Arial, sans-serif; color:#b4b4b4;}
+.slider .slide-info p{font:italic 1.4em Oswald, Arial, sans-serif; color: #FFF;}
+
+/*Content Menu*/
+.content-menu{margin:-58px 0 25px 0;}
+.content-menu .mobile-view{display:none;}
+.content-menu .content-center{position:relative;}
+.content-menu li{background-color:#00789c; margin:0 1%; text-align:center; width:14.6%; height:125px; display:block; float:left; position:relative; background-position:center 23px; background-repeat:no-repeat;}
+.content-menu li:hover{cursor:pointer;}
+.content-menu li a{font-size:1.6em; color:#FFF; text-transform:uppercase; font-style:italic; position:absolute; bottom:15px; width:100%;}
+.content-menu li.obra{background-image:url(../images/content-menu-obra.png);}
+.content-menu li.lancamento{background-image:url(../images/content-menu-lancamento.png);}
+.content-menu li.bairro{background-image:url(../images/content-menu-bairro.png);}
+.content-menu li.futuro-lancamento{background-image:url(../images/content-menu-futuro-lancamento.png);}
+.content-menu li.entregues{background-image:url(../images/content-menu-entregues.png);}
+.content-menu li.bairro{background-image:url(../images/content-menu-bairro.png);}
+.content-menu li.corretor{box-shadow: #e9821b 0 -5px 0; 
+background: #ffb76f url(../images/content-menu-corretor-online.png) no-repeat center 23px, center center;
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, center center linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
+}
+.content-menu li.corretor a{text-shadow:#7f4c18 1px 1px 0; font-size:1.35em; line-height:1.4em;}
+.content-menu li.corretor a strong{text-shadow:#7f4c18 1px 1px 0; font-size:1.25em; font-style:normal !important; font-weight:bold;}
+
+.content-menu .mobile-view li a{font-size:1.2em; text-align: left; top: 87px; bottom:auto;}
+.content-menu .mobile-view li.lancamento a, .content-menu .mobile-view li.futuro-lancamento a{font-size:1em;}
+.content-menu .mobile-view li{width:16%; height:125px; padding-left: 2%;}
+.content-menu .mobile-view .corretor{ display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:9px 0; width:98%; margin: 0 1% 15px 1%;;
+background: #ffb76f;
+background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
+background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
+}
+.content-menu .mobile-view .corretor a{font:bold 1.5em Oswald, Arial, sans-serif; text-transform:uppercase; color:#FFF; text-shadow:#7f4c18 1px 1px 0; display: table; margin: 0 auto; background:url(../images/content-menu-corretor-online.png) no-repeat left center; padding: 21px 0 0 50px; height:42px;}
+
+.content-menu .selected-menu{background:url(../images/selected-menu.png) no-repeat; width:24px; height:14px; bottom:-31px; position:absolute;}
+
+/*Quem somos*/
+.quem-somos{padding:35px 0 80px 0;}
+.quem-somos h2{font:italic 2.6em Oswald, Arial, sans-serif; margin-bottom:25px; color:#00789c; text-transform:uppercase;}
+.quem-somos .linha{width:100%; border-bottom:solid 1px #00789c; margin-bottom:33px;}
+.quem-somos img{float:left; max-width:49%; margin:0 5% 3% 0; }
+.quem-somos .quem-somos-txt h3{font: bold 2em Oswald, Arial, sans-serif; color:#404040}
+.quem-somos .quem-somos-txt p{margin:30px 0; font: normal 1.4em/1.9em Tahoma, Arial, sans-serif !important; color:#404040; text-align:justify}
+.quem-somos .quem-somos-txt a{color:#00789c; font:bold 12px Oswald, Arial, sans-serif; background: url(../images/saiba-mais-sobre-nos.png) no-repeat; padding-left:50px; height:34px; padding-top:9px; text-transform:uppercase; display:table;}
+
+/* ----------------------- AND... Make it responsible! ------------------*/
+
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+
+/*Content Menu*/
+.content-menu .page-margin{margin:0;}
+.content-menu li.corretor a{font-size:1.08em; line-height:1.4em;}
+.content-menu li.corretor a strong{font-size:1.2em;}
+
+}
+
+/* End of Tablet */
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+/*The Content Center | Page Margin*/
+.content-center{max-width: 480px; min-width:320px;}
+.page-margin{margin:0 5%;}
+
+/*Content-menu*/
+.content-menu .page-margin{margin:0;}
+.content-menu .default-view{display:none;}
+.content-menu .mobile-view{display:block;}
+    
+/*Slider*/
+.slider{height:312px !important;}
+.slider .slide-info, .slider img{float:none; display:table; margin:0 auto !important; }
+.slider .camera_caption img{max-width:120px !important;}
+.slider .camera_caption{top:10%; left:50%; width:253px !important; margin-left:-120px;}
+.slider *{text-transform:uppercase; display:block;}
+.slider .slide-info{padding:11px 28px;}
+.slider .slide-info strong{font:bold 1.5em Oswald, Arial, sans-serif;}
+.slider .slide-info span{font:italic 0.9em Oswald, Arial, sans-serif;}
+.slider .slide-info p{font:italic 1.05em Oswald, Arial, sans-serif;}
+.camera_next{height: 70px !important; width: 35px !important; margin-top:-26px !important;}
+.camera_prev{height: 70px !important; width: 35px !important; margin-top:-26px !important;}
+.camera_next > span{background: url(../images/slider-home-next-mobile.png) no-repeat 0 0 !important; height: 70px !important; width: 35px !important;}
+.camera_prev > span{background: url(../images/slider-home-prev-mobile.png) no-repeat 0 0 !important; height: 70px !important; width: 35px !important;}
+
+}
+
+/* End of Mobile */

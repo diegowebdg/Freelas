@@ -1,0 +1,63 @@
+/*
+Theme Name: Sanay
+Theme URI: http://wwwsanay.com.br/
+Description: Sanay | Desenvolvimento Imobiliário
+Author: Diego Rocha
+Author URL: http://www.diegowebdg.com.br
+*/
+
+h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
+
+.left-column, .right-column{margin-bottom:120px;}
+.left-column{float:left; width:66%}
+.left-column h2{font:bold 1.8em Oswald, Arial, sans-serif; color:#404040; margin-bottom:25px;}
+.left-column img{max-width:100%; height:auto; margin-bottom:25px;}
+.left-column p{font:1.4em/2em Tahoma, Arial, sans-serif !important; color:#676767; margin-bottom:30px; text-align:justify;}
+
+.right-column{float:right; width:31%}
+
+/* ----------------------- AND... Make it responsible! ------------------*/
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:90px;}
+.left-column img{width:100%;}
+
+/*Encontre Imóveis*/
+.encontre-imoveis{float:left; width:45%;}
+.options{float:right; width:45%;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+}
+
+/* End of Tablet */
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+/*The Content Center | Page Margin*/
+.content-center{max-width: 480px; min-width:320px;}
+.page-margin{margin:0 5%;}
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:90px;}
+.left-column img{width:100%;}
+
+/*Encontre Imóveis*/
+.encontre-imoveis{max-width:326px; display:table; margin:0 auto 65px auto;}
+.encontre-imoveis span{margin:44px 15.4% 0 15.4% !important;}
+.options{max-width:326px; width:100%; display:table; margin:0 auto;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+
+}
+
+/* End of Mobile */

@@ -1,0 +1,17 @@
+/*
+Theme Name: Sanay
+Theme URI: http://wwwsanay.com.br/
+Description: Sanay | Desenvolvimento Imobiliário
+Author: Diego Rocha
+Author URL: http://www.diegowebdg.com.br
+*/
+
+.options{border-radius:5px; box-shadow:#7f4d1b 0 -4px 0;}
+.options li{background-color:#00789c; border-top:#409ab5 1px solid; border-bottom:solid 1px #00647d; padding:30px 0 30px 15px;}
+.options li:first-child{background-color:#ff9b37;}
+.options li:first-child a{font:bold 1.6em Oswald, Arial, sans-serif;}
+.options li:last-child{border-radius: 0 0 5px 5px}
+.options a{font:italic 1.6em Oswald, Arial, sans-serif; color:#FFF; text-transform:uppercase; padding-left:57px; background-image:url(../images/bg-sidebar.png); background-repeat:no-repeat;}
+.options a.ligamos{background-position:0 -94px;}
+.options a.duvidas{background-position:0 -182px;}
+.options a.indique{background-position:0 -261px;}

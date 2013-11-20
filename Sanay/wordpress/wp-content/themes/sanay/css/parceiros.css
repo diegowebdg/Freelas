@@ -1,0 +1,86 @@
+/*
+Theme Name: Sanay
+Theme URI: http://wwwsanay.com.br/
+Description: Sanay | Desenvolvimento Imobiliário
+Author: Diego Rocha
+Author URL: http://www.diegowebdg.com.br
+*/
+
+h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
+
+.left-column, .right-column{margin-bottom:120px;}
+.left-column{float:left; width:66%}
+.left-column h2{font:bold 1.8em Oswald, Arial, sans-serif; color:#404040;}
+.left-column .parceiro-content .parceiro:first-child{border:none !important;}
+.left-column .parceiro{border-top:solid 1px #d9d9d9; padding:30px 0;}
+.left-column .parceiro div{float:left;}
+.left-column .parceiro-img{border: solid 1px #d9d8d8; width:49%; height:132px; display:table; text-align:center;
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3));
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );
+}
+.left-column .relative{display:table-cell; text-align:center; float:none !important; vertical-align:middle;}
+.left-column .parceiro-img img{text-align:center; display:inline;}
+.left-column .parceiro-info{width:49%; display: table; height:132px;}
+.left-column .parceiro-info span{display:block; color:#7f7f7f; line-height:1.4em; font:italic 1.4em Oswald, Arial, sans-serif; text-transform:uppercase; text-align:left}
+.left-column .parceiro-info span strong{font:bold 1em Oswald, Arial, sans-serif;}
+.left-column .parceiro-info span a{color:inherit; display:inline;}
+.left-column .parceiro-info span a:hover{text-decoration:underline;}
+.left-column .parceiro-info .relative{padding:15%;}
+
+.right-column{float:right; width:31%;}
+
+/* ----------------------- AND... Make it responsible! ------------------*/
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:90px;}
+
+/*Encontre Imóveis*/
+.encontre-imoveis{float:left; width:45%;}
+.options{float:right; width:45%;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+}
+
+/* End of Tablet */
+
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+/*The Content Center | Page Margin*/
+.content-center{max-width: 480px; min-width:320px;}
+.page-margin{margin:0 5%;}
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:40px;}
+
+/*Parceiros Div*/
+.left-column .parceiro div{float:none; width:100%; }
+.left-column .parceiro .parceiro-info{height:auto;}
+.left-column .parceiro-info .relative{padding: 10% 15% 0 15%;}
+
+/*Encontre Imóveis*/
+.encontre-imoveis{max-width:326px; display:table; margin:0 auto 65px auto;}
+.encontre-imoveis span{margin:44px 15.4% 0 15.4% !important;}
+.options{max-width:326px; width:100%; display:table; margin:0 auto;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+
+}
+
+/* End of Mobile */
