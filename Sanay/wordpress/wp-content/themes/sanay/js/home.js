@@ -8,6 +8,7 @@ jQuery(document).ready(function(e) {
     });
     /*End of Main Menu hover*/
     
+    /*Camera Slider*/
     jQuery(".slider").camera({
 		loader: 'none',
         height: '460px',
@@ -17,9 +18,10 @@ jQuery(document).ready(function(e) {
 		playPause: false,
 		pauseOnClick: false,
 		time: 3500,
-		fx: 'curtainBottomLeft',
-        
-        
+		fx: 'curtainBottomLeft'
 	});
+    /*End of Camera Slider*/
+    
+    
 	
 });

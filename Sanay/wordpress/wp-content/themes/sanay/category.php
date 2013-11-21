@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/home.css" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/camera.css" />
 	
 	<!-- Content -->
     <div id="content">
@@ -100,6 +99,45 @@
                         <?php $category = get_the_category(); echo $category[0]->cat_name; ?>
                     </h2>
                     
+                    <?php if( is_category('bairro') ) { ?>
+                        
+                    <h2>Por bairro:</h2>
+                    
+                        <!--Bairros Selector-->
+                        <select id="bairros-list-content">
+                            <option selected>Selecione aqui outros bairros:</option>
+                            <?php
+                                $bairros_list = array( 'numberposts' => -1, 'category' => $category_post->term_id );
+                                $myposts = get_posts( $bairros_list );
+                                
+                                if(count($myposts) > 0) 
+                                { 	
+                                    foreach( $myposts as $post ) :	setup_postdata($post); 
+                                    
+                                        $args1 = array(
+                                           'post_type' => 'attachment',
+                                           'numberposts' => -1,
+                                           'post_status' => null,
+                                           'post_parent' => $post->ID
+                                        );
+                                        $attachments = get_posts( $args1 );
+                                    
+                                    ?>
+                                    
+                                    <option><?php echo get_field("bairro"); ?></option>
+                                    
+                                     <?php 
+                                    endforeach;
+                                    } 
+                                    else { 
+                                        echo "<p class='nenhum-encontrado'>Nenhum empreendimento encontrado.</p>";
+                                    }
+                                ?>
+                        </select>
+                        <!--End of Bairros Selector-->
+                    <?php } ?>
+                    
+                    
                     <!--Destaques Slider-->
                     <div class="destaques-slider">
                         <div class="viewport">
@@ -109,33 +147,30 @@
                                     <?php if( is_category('lancamentos')) { ?>
                                         <?php
                                             $category_post = get_category_by_slug('lancamentos');
-                                            $args = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                         ?>
                                     
                                     <?php } else if( is_category('em-obra') ) { ?>
                                         
                                         <?php
                                             $category_post = get_category_by_slug('em-obra');
-                                            $args = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                         ?>
                                 
                                     <?php } else if( is_category('futuro-lancamento') ) { ?>
                                 
                                         <?php
                                             $category_post = get_category_by_slug('futuro-lancamento');
-                                            $args = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                         ?>
                                 
                                     <?php } else if( is_category('entregues') ) { ?>
                                 
                                         <?php
                                             $category_post = get_category_by_slug('entregues');
-                                            $args = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                         ?>
                                 
                                     <?php } ?> 
                                 
                                     <?php
+                                    $args = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                     $myposts = get_posts( $args );
                                     
                                     if(count($myposts) > 0) 
@@ -177,22 +212,6 @@
                                 </ul>
                             </div>
                             <div class="clear"></div>
-                        
-                        <!--Slide Selectors-->
-                        <!--<div class="slide-selector">
-                            <a href="#" title="Anterior" class="anterior">Anterior</a>
-                            <ul id="destaques-selector">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                            </ul>
-                            <a href="#" title="Próximo" class="proximo">Próximo</a>
-                            <div class="clear"></div>
-                        </div>-->
-                        <!--End of Slide Selectors-->
                         
                     </div>
                     <!--Destaques Slider-->
@@ -245,8 +264,29 @@
 <!-- Scripts - Yes, on the end -->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/camera.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.mobile.customized.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/home.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(e){
+    
+    /*Main Menu hover*/
+    jQuery(".content-menu li").hover(function(e){
+        jQuery(this).css({backgroundColor:"#003C4E" }, 250);
+    }, function(e){
+        jQuery(this).css({backgroundColor:""}, 250);
+    });
+    /*End of Main Menu hover*/
+    
+    /*Get the url of select from Bairros*/
+    var optionValue = jQuery("#bairros-list-content").val();
+    jQuery("#bairros-list-content").change(function(e){
+        if(jQuery(this).find(':selected').val() !== 'Selecione aqui outros bairros:'){
+            optionValue = jQuery("#bairros-list-content").val();
+            optionValue = optionValue.replace(/\s+/g, '+');
+            window.location = site_url + '?s=' + optionValue;
+        }
+    });
+    /*End of Get the url of select from Bairros*/
+    
+    
+});
+</script>
 <!-- End of Scripts -->

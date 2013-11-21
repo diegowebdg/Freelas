@@ -99,6 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .ficha-tecnica li, .ficha-tecnica li *{ color:#5e5e5e; font: 12px Tahoma, Arial, sans-serif !important;}
 .ficha-tecnica li strong{font-weight:bold !important;}
 .ficha-tecnica a{display:inline;}
+.ficha-tecnica pre{display:inline;}
 .ficha-tecnica .block{display:block;}
 .ficha-tecnica .acesse{color:#024e65; text-decoration:underline;}
 

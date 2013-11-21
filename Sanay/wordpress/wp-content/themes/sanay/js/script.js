@@ -40,17 +40,26 @@ jQuery(document).ready(function(e) {
         }
     });
     /*End of Mobile menu click | Scroll*/
+    
+    /*Filter Duplicates in bairros-list*/
+    var seen = {};
+    jQuery('#bairros-list-content option').each(function() {
+        var txt = jQuery(this).text();
+        if (seen[txt])
+            jQuery(this).remove();
+        else
+            seen[txt] = true;
+    });
+    /*End of Filter Duplicates in bairros-list*/
+    
 });
 
 /*Open pop-up Corretores*/
-/*function corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556') {
-  var left = (screen.width/2)-(w/2);
-  var top = (screen.height/2)-(h/2);
-  return window.open('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
-} */
-
 function corretorDefault(url, title, w, h) {
   var left = (screen.width/2)-(w/2);
   var top = (screen.height/2)-(h/2);
   return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
 } 
+/*End of Open pop-up Corretores*/
+
+

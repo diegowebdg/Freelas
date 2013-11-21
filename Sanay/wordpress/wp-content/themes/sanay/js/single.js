@@ -236,5 +236,9 @@ $(document).ready(function(e) {
     });
     /*Mobile Expand*/
     
+    /*Hide empty Ficha Técnica <li>*/
+    $(".ficha-tecnica li span:empty").parent().remove();
+    /*End of Hide empty Ficha Técnica <li>*/
+    
 	
 });
