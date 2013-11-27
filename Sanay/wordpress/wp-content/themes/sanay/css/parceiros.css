@@ -31,7 +31,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .left-column .parceiro-info span{display:block; color:#7f7f7f; line-height:1.4em; font:italic 1.4em Oswald, Arial, sans-serif; text-transform:uppercase; text-align:left}
 .left-column .parceiro-info span strong{font:bold 1em Oswald, Arial, sans-serif;}
 .left-column .parceiro-info span a{color:inherit; display:inline;}
-.left-column .parceiro-info span a:hover{text-decoration:underline;}
+.left-column .parceiro-info span a:hover{text-decoration:underline; color:#e9821b}
 .left-column .parceiro-info .relative{padding:15%;}
 
 .right-column{float:right; width:31%;}

@@ -9,7 +9,7 @@ Author URL: http://www.diegowebdg.com.br
 h1, h2{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c; margin:0 0 29px 0;}
 .linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
 
-.img-name-status img{float:left; margin-right:2.5%;}
+.img-name-status img{float:left; margin-right:2.5%; max-width:175px;}
 .img-name-status .name-status h1{margin-bottom:13px !important;}
 .img-name-status .name-status .status{background-color:#ebebeb; border-radius:4px; box-shadow:#757575 0 -4px 0; display:table; padding:15px 13px;}
 .img-name-status .name-status .status *{color:#000; font-size:16px; text-transform:uppercase; font-style:italic;}
@@ -25,6 +25,7 @@ background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -ms-
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
 }
+.main-info .corretor:hover{background:#e9821b url(../images/corretor-icon-interna.png) 20px center no-repeat;}
 
 .main-info .tablet-corretor{ display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:4px 0; width:100%; display:none;
 background: #ffb76f;
@@ -71,6 +72,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 
 /*Gallery*/
 .left-column .gallery, .left-column .planta-gallery{margin-bottom:40px;}
+.left-column .planta-gallery{margin-top:75px;}
 .left-column .gallery .large-image, .left-column .planta-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden;}
 .left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{width:100%; padding-top:370px; position:absolute; background:url(../images/ampliar-foto.png) no-repeat center; top:0; left:0; opacity:0;}
 .left-column .gallery .large-image span, .left-column .planta-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}

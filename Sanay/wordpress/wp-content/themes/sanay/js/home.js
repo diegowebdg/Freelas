@@ -6,21 +6,16 @@ jQuery(document).ready(function(e) {
     }, function(e){
         jQuery(this).css({backgroundColor:""}, 250);
     });
-    /*jQuery(".content-menu li.corretor").hover(function(e){
-        jQuery(this).css({backgroundColor:"#e7851a",  backgroundImage:"url('../images/content-menu-corretor-online.png')", backgroundRepeat: "no-repeat", backgroundPosition: "center 23px" });
-    }, function(e){
-        jQuery(this).css({background:""}, 250);
-    });*/
     /*End of Main Menu hover*/
     
     /*Slider Hover*/
-    jQuery(".camera_next, .camera_prev").hover(function(e){
+    /*jQuery(".camera_next, .camera_prev").hover(function(e){
         console.log("works");
         jQuery(this).animate({opacity:0.6});
     }, function(e){
         console.log("works2");
         jQuery(this).animate({opacity:1})
-    });
+    });*/
     /*End of Slider Hover*/
     
     /*Camera Slider*/

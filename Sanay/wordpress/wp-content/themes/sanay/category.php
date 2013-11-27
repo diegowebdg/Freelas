@@ -17,7 +17,7 @@
                             <li class="futuro-lancamento borders animate"><a href="<?php echo home_url(); ?>/category/futuro-lancamento/" title="Futuro Lançamento">Futuro Lançamento</a></li>
                             <li class="entregues borders animate"><a href="<?php echo home_url(); ?>/category/entregues/" title="Entregues">Entregues</a></li>
                             <li class="bairro borders animate"><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
-                            <li class="corretor borders animate"><a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
+                            <li class="corretor borders"><a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
                         </ul>
                         <div class="clear"></div>
                     </div>
@@ -36,7 +36,7 @@
                         
                         <?php echo '<div class="selected-menu" style="left:8.5%;"></div>' ?>
                         <style>
-                            .lancamento, .futuro-lancamento, .entregues, .bairro{opacity:0.6 !important;}
+                            .lancamento, .futuro-lancamento, .entregues, .bairro{opacity:0.2 !important;}
                             .obra{opacity:1 !important;}
                         </style>
                 
@@ -105,7 +105,7 @@
                     
                         <!--Bairros Selector-->
                         <select id="bairros-list-content">
-                            <option selected>Selecione aqui outros bairros:</option>
+                            <option selected>Selecione aqui o bairro desejado:</option>
                             <?php
                                 $bairros_list = array( 'numberposts' => -1, 'category' => $category_post->term_id );
                                 $myposts = get_posts( $bairros_list );
@@ -221,40 +221,7 @@
         </div>
         <!--END OF Array dos posts-->
     	
-    	<!-- Quem somos -->
-    	<div class="quem-somos">
-            <div class="content-center">
-                <div class="page-margin">
-                    <h2>Quem somos</h2>
-                </div>
-            </div>
-    		<div class="linha"></div>
-    		
-            <div class="content-center">
-                <div class="page-margin">
-                    
-                    <div class="quem-somos-txt">
-                        <?php if( get_field('imagem_principal_home', 27) ) {
-                            $image = get_field('imagem_principal_home', 27 ); ?>
-                            <img 
-                            src="<?php echo $image['url']; ?>"
-                            alt="<?php echo $image['alt']; ?>"
-                            title="<?php echo $image['title']; ?>">
-                            
-                        <?php } ?>
-                        
-                        
-                            <?php if( get_field('quem_somos_txt', 27) ) {
-                                echo get_field('quem_somos_txt', 27 ); ?>
-                            <?php } ?>
-                            
-                            <a href="<?php echo home_url(); ?>/empresa/" title="Saiba mais sobre nós">Saiba mais sobre nós</a>
-                        <div class="clear"></div>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- End of Quem somos -->
+    	
     	
 	</div>
     <!-- End of Content -->
@@ -268,7 +235,7 @@
 jQuery(document).ready(function(e){
     
     /*Main Menu hover*/
-    jQuery(".content-menu li").hover(function(e){
+    jQuery(".content-menu .obra, .content-menu .lancamento, .content-menu .futuro-lancamento, .content-menu .entregues, .content-menu .bairro").hover(function(e){
         jQuery(this).css({backgroundColor:"#003C4E" }, 250);
     }, function(e){
         jQuery(this).css({backgroundColor:""}, 250);
@@ -278,7 +245,7 @@ jQuery(document).ready(function(e){
     /*Get the url of select from Bairros*/
     var optionValue = jQuery("#bairros-list-content").val();
     jQuery("#bairros-list-content").change(function(e){
-        if(jQuery(this).find(':selected').val() !== 'Selecione aqui outros bairros:'){
+        if(jQuery(this).find(':selected').val() !== 'Selecione aqui o bairro desejado:'){
             optionValue = jQuery("#bairros-list-content").val();
             optionValue = optionValue.replace(/\s+/g, '+');
             window.location = site_url + '?s=' + optionValue;

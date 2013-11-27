@@ -10,6 +10,7 @@ jQuery(document).ready(function(e) {
     jQuery(".empreendimentos-menu").hover(function(e){
         jQuery(this).addClass("active");
         jQuery(".submenu-empreendimentos").addClass("active");
+        jQuery("#header .hover").delay(1000).css({opacity:1});
     });
     /*End of Expand the submenu*/
     
@@ -23,11 +24,13 @@ jQuery(document).ready(function(e) {
 	/*Destaque hover*/
 	jQuery(".destaques #destaques-list li").hover(function(e) {
         jQuery(this).children(".detalhes-hover").css({opacity:1});
-        jQuery(this).children("h3").css({color:"#e9821b"});
-        jQuery(this).children("a:contains('Mais detalhes')").css({transform:"scale(1.1)"});
+        jQuery(this).children(".destaque-info").children("h3").css({color:"#e9821b"});
+        jQuery(this).children("a[title*='Mais detalhes']").css({background:"#e9821b"});
         
     }, function(e){
 		jQuery(this).children(".detalhes-hover").css({opacity:""});
+        jQuery(this).children(".destaque-info").children("h3").css({color:""});
+        jQuery(this).children("a[title*='Mais detalhes']").css({background:""});
 	});
 	/*End of Destaque hover*/
     
@@ -42,6 +45,7 @@ jQuery(document).ready(function(e) {
         if(jQuery(".submenu-empreendimentos").hasClass("active") && jQuery(".empreendimentos-menu").hasClass("active")){
             jQuery(".submenu-empreendimentos").removeClass("active");
             jQuery(".empreendimentos-menu").removeClass("active");
+            jQuery("#header .hover").css({opacity:0});
         }
     });
     /*End of Mobile menu click | Scroll*/

@@ -70,7 +70,10 @@
                         <ul>
                             <li><a href="<?php echo home_url(); ?>" title="Voltar para a página inicial" class="home-link link-padding">Home</a></li>
                             <li><a href="<?php echo home_url(); ?>/empresa/" title="A empresa">A empresa</a></li>
-                            <li><a href="#" title="Empreendimentos" class="empreendimentos-menu">Empreendimentos</a></li>
+                            <li class="relative">
+                                <a href="#" title="Empreendimentos" class="empreendimentos-menu">Empreendimentos</a>
+                                <div class="hover animate"></div>
+                            </li>
                             <li><a href="<?php echo home_url(); ?>/parceiros/" title="Parceiros">Parceiros</a></li>
                             <li><a href="<?php echo home_url(); ?>/contato/" class="fale-conosco" title="Fale conosco">Fale conosco</a></li>
                             <li><a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" class="corretores" title="Corretores Online">Corretores Online</a></li>
