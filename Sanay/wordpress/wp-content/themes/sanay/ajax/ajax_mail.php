@@ -10,9 +10,9 @@
 	$mensagem = utf8_decode($_POST['msg']);
 	$email_destino = '';
 	if($_POST['departamento']=='Administrativo'){
-	 	$email_destino = 'diego.webdg@gmail.com';
+	 	$email_destino = 'rafaelkae@gmail.com';
 	} else{
-		$email_destino = 'diego@isee.com.br';
+		$email_destino = 'rafaelkae@gmail.com';
 	}						
 
 	// Inicia a classe PHPMailer

@@ -161,6 +161,15 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/masked.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/sidebar.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+    $("#menu ul li").children("a[title*='A empresa']").parent().css({borderBottom:"solid 3px #02789e"});
+    
+    $("#ddd_tel_ligamos").mask("(99)9999-9999");
+    $("#ddd_tel_duvidas").mask("(99)9999-9999");
+});
+</script>
 <!-- End of Scripts -->

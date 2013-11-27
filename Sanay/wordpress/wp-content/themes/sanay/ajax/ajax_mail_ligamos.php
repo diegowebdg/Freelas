@@ -25,7 +25,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "diego.webdg@gmail.com"; // Seu e-mail
+	$mail->From = "rafaelkae@gmail.com"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	

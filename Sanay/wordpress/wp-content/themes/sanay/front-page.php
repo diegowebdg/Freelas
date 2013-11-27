@@ -144,7 +144,7 @@
     	<div class="quem-somos">
             <div class="content-center">
                 <div class="page-margin">
-                    <h2><?php the_title(); ?></h2>
+                    <h2>Quem somos</h2>
                 </div>
             </div>
     		<div class="linha"></div>

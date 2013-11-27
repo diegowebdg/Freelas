@@ -204,6 +204,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/masked.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/sidebar.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/contato.js"></script>

@@ -19,7 +19,7 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 .left-column .division-right{float:right;}
 .left-column .form label{text-transform:uppercase; font:italic 1.4em Oswald, Arial, sans-serif; color:#00789c; display:block; margin-bottom:10px;}
 .left-column .form input{text-indent:10px;}
-.left-column .form input, .left-column .form textarea, select, option{font:12px Tahoma, Arial, sans-serif !important; color:#00789c; width:100%; border:none; background-color:#f9f8f8; border-radius:7px; height:37px; box-shadow:#7c7c7c 0 -4px 0; margin-bottom:33px; outline:none;}
+.left-column .form input, .left-column .form textarea, select, option{font:12px Tahoma, Arial, sans-serif !important; color:#00789c; width:100%; border:none; background-color:#F9F8FF; border-radius:7px; height:37px; box-shadow:#7c7c7c 0 -4px 0; margin-bottom:33px; outline:none;}
 
 .select{position:relative; overflow:hidden; padding: 4px 0;}
 .select select{-webkit-appearance: none; -moz-appearance: none; appearance: none; text-indent:10px; width:100%; background:url(../images/seta-select.png) no-repeat 270px center; text-transform:uppercase; font:italic 1.4em Oswald, Arial, sans-serif !important; }

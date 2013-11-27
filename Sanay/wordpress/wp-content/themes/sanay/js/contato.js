@@ -1,5 +1,11 @@
 $(document).ready(function(e) {
     
+    
+    $("#tel").mask("(99)9999-9999");
+    $("#cel").mask("(99)9999-9999");
+    
+    $("#ddd_tel_ligamos").mask("(99)9999-9999");
+    $("#ddd_tel_duvidas").mask("(99)9999-9999");
     /*Valida Campos do formulário*/
 	$(function() {
 		function validaCampos(){ 
@@ -12,11 +18,19 @@ $(document).ready(function(e) {
 				campos=campos+"- Nome\n";
 			}
 			    			     			     
-			if($('#email').val()!="") {
-				conta++; 
-			}else{
-				campos=campos+"- E-mail\n";
-			}
+            if($('#email').val()!="") {
+            
+                var filtro_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                
+                if(filtro_email.test($('#email').val())){
+                    conta++;      
+                }else{
+                    campos=campos+"- Email Inválido\n";
+                }
+            }else{
+                campos=campos+"- E-mail\n";
+            }
+            
 			if($('#msg').val()!="") {
 				conta++;
 			}else{
@@ -51,5 +65,11 @@ $(document).ready(function(e) {
 	
 	});
 	/*Fim do Valida Campos do formulário*/
+    
+    
+    $(document).ready(function(e){
+        $("#menu ul li").children("a[title*='Fale conosco']").css({borderBottom:"solid 3px #02789e"});
+    });
+
     
 });
