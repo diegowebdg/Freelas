@@ -40,6 +40,7 @@ background: url(../images/content-menu-corretor-online.png) no-repeat center 23p
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, center center linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
 }
+.content-menu li.corretor:hover{background:#e7851a url('../images/content-menu-corretor-online.png') no-repeat center 23px}
 .content-menu li.corretor a{text-shadow:#7f4c18 1px 1px 0; font-size:1.35em; line-height:1.4em;}
 .content-menu li.corretor a strong{text-shadow:#7f4c18 1px 1px 0; font-size:1.25em; font-style:normal !important; font-weight:bold;}
 

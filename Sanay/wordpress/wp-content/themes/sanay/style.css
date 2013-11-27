@@ -96,10 +96,14 @@ a{text-decoration:none; display:block;}
 #header #menu{float:right; padding-top: 12px; display:table;}
 #header #menu li{float:left; display:block; min-height:38px;}
 #header #menu li a{display:block; font-style:italic; color:#616161; text-transform:uppercase; margin-left:10px; font-size:1.6em; line-height:2em !important;}
+#header #menu li a:hover{color:#e9821b;}
 #header #menu li a:after{content:" • "; font-size:1.9em; position:relative; top:5px;}
 #header #menu li a.home-link{background:url(images/menu-home.png) no-repeat; width:28px; padding-top:28px; margin: 6px 0 0 10px; }
 #header #menu li a.fale-conosco:after, #header #menu li a.corretores:after{content:"" !important;}
 #header #menu li a.corretores{background:url(images/menu-corretor-online.png) no-repeat; width:38px; padding:0 0 0 53px; margin-left:54px; width:inherit; color:#e9821b;}
+#header #menu li a.corretores:hover{text-decoration:underline;}
+#header .empreendimentos-menu.active{font-weight:bold; color:#00789c !important;}
+#header .empreendimentos-menu.active:after{font-weight:normal; text-decoration:none;}
 
 /* Header MOBILE */
 #header .mobile-view{display:none;}
@@ -116,11 +120,11 @@ a{text-decoration:none; display:block;}
 
 /*Submenu Empreendimentos*/
 .submenu-empreendimentos{ position:relative; overflow:hidden; height:0;}
-.submenu-empreendimentos.active{height:25px; padding:20px 0;}
+.submenu-empreendimentos.active{height:25px; padding:20px 0; }
 .submenu-empreendimentos ul{display:table; margin:0 auto; min-width:760px;}
 .submenu-empreendimentos li{float:left; margin-right:10%;}
 .submenu-empreendimentos li a{font:italic 1.5em Oswald, Arial, sans-serif; color: #616161; text-transform: uppercase;}
-.submenu-empreendimentos li a:hover{text-decoration:underline;}
+.submenu-empreendimentos li a:hover{text-decoration:underline; color:#e9821b;}
 /*End of Submenu Empreendimentos*/
 
 /*Destaques*/
@@ -140,17 +144,6 @@ a{text-decoration:none; display:block;}
 .destaques #destaques-list p.nenhum-encontrado{font-size:2em;}
 .destaques #destaques-list a{font:bold 1.6em Oswald; text-transform:uppercase; color:#FFF; text-shadow:#000 1px 1px 0; display:block; border-radius:25px; text-align:center; padding:13px 49px; width:auto; margin:0 auto -25px auto; width:120px; background: #ffb76f; background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b)); background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );}
 .destaques #destaques-list .detalhes-hover{width:220px; padding-top:100%; position:absolute; background:url(images/veja-mais-detalhes.png) no-repeat center 25px; top:0; left:0; opacity:0;}
-
-/*Destaques | Slide selector*/
-/*.destaques .slide-selector{ margin-top:75px; display:table; height:16px; margin:75px auto 0 auto;}
-.destaques .slide-selector a{display:block;}
-.destaques .slide-selector .anterior, .destaques .slide-selector #destaques-selector li, #destaques-selector{float:left;}
-.destaques .slide-selector .proximo, .destaques .slide-selector .anterior{font:bold 12px Oswald, Arial, sans-serif; color:#00789c; text-transform:uppercase;}
-.destaques .slide-selector .anterior{background:url(images/anterior.png) no-repeat left center; padding-left:40px; margin-right:16px;}
-.destaques .slide-selector .proximo{background:url(images/proximo.png) no-repeat right center; padding-right:40px; margin-left:16px; float:right;}
-.destaques .slide-selector #destaques-selector li a{background: #00789c;
-color: #FFF; border-radius: 100%; width: 28px; height: 23px; display: block;
-text-align: center; padding-top: 5px; font: bold 12px Oswald, Arial, sans-serif; margin:-5px 5px 0 5px;}*/
 
 /*Post img*/
 .post-img{height:196px; border-bottom:solid 5px #00789c;}
@@ -252,7 +245,7 @@ background: #005873; background: -moz-linear-gradient(top,  #005873 0%, #00495f 
     
 /*Header*/
 #header .logo {float:none; margin:0 auto;}
-#header #menu {float:none; margin:0 auto;}
+#header #menu {float:none; margin:0 auto; width: 700px;}
 
 /*Destaques*/
 .destaques #destaques-list li{width:46.7%; margin: 0 0 50px 0; }

@@ -107,6 +107,17 @@
                                 </div>
                                 <div class="clear"></div>
                                 
+                                <div class="division-left">
+                                    <label>Departamento de interesse:</label>
+                                    <div class="select">
+                                        <select name="departamento">
+                                            <option selected value="Comercial">Comercial</option>
+                                            <option value="Administrativo">Administrativo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                
                                 <label>Digite sua mensagem:</label>
                                 <textarea id="msg" name="msg"></textarea>
                                 <button type="button" title="Enviar mensagem" id="bt-enviar">Enviar Mensagem</button>
@@ -140,7 +151,7 @@
     	<div class="destaques">
         	<div class="content-center">
                 <div class="page-margin">
-                    <h2>Veja os imóveis que podem te interessar</h2>
+                    <h2>Em destaque</h2>
                     <!--Destaques Slider-->
                     <div class="destaques-slider">
                         <div class="viewport">
@@ -193,6 +204,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/sidebar.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/contato.js"></script>
 <!-- End of Scripts -->

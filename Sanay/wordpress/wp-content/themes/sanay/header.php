@@ -4,7 +4,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
 <meta name="viewport" content="width=device-width" />
 <title><?php if ( is_search() ) { echo the_search_query(); echo " - "; bloginfo(’name’); } ?><?php wp_title(''); ?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url');?>" />

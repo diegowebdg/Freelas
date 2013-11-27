@@ -12,16 +12,11 @@ $(document).ready(function(e) {
 				campos=campos+"- Nome\n";
 			}
 			    			     			     
-			if($('#email').val()!="") {     
-				var filtro_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-				if(filtro_email.test($('#email').val())){       
-					conta++;      
-				}else{
-					campos=campos+"- Email Inválido\n";
-				}
+			if($('#email').val()!="") {
+				conta++; 
 			}else{
 				campos=campos+"- E-mail\n";
-			}   
+			}
 			if($('#msg').val()!="") {
 				conta++;
 			}else{
@@ -31,7 +26,6 @@ $(document).ready(function(e) {
 				return true;
 			}else{
 				alert('Preencha os campos:\n'+campos+'');
-				ga('send', 'event', 'Button', 'Click', currentPage + "Formulário Não Enviado");
 				return false;
 			}
 		}
@@ -42,7 +36,7 @@ $(document).ready(function(e) {
 			
 				e.preventDefault();	
 				$.ajax({
-					url:'ajax-contato.php',
+					url:'http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/ajax/ajax_mail.php',
 					type:'POST',
 					dataType:'json',
 					data: $('#form').serialize(),

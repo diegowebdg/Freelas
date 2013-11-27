@@ -11,15 +11,19 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 
 .left-column, .right-column{margin-bottom:120px;}
 .left-column{float:left; width:66%}
-.left-column h2{font:bold 1.8em Oswald, Arial, sans-serif; color:#404040; margin-bottom:25px;}
-.left-column h2 a{display:inline !important; color:inherit; margin-bottom:60px;}
+.left-column h2{font: 1.8em Oswald, Arial, sans-serif; color:#404040; margin-bottom:25px;}
+.left-column h2 a{display:inline !important; color:#fe9b36; margin-bottom:60px;}
 
 .left-column .division-left, .left-column .division-right{width:47%;}
 .left-column .division-left{float:left;}
 .left-column .division-right{float:right;}
 .left-column .form label{text-transform:uppercase; font:italic 1.4em Oswald, Arial, sans-serif; color:#00789c; display:block; margin-bottom:10px;}
 .left-column .form input{text-indent:10px;}
-.left-column .form input, .left-column .form textarea{font:12px Tahoma, Arial, sans-serif !important; color:#c9c8c8; width:100%; border:none; background-color:#f9f8f8; border-radius:7px; height:37px; box-shadow:#7c7c7c 0 -4px 0; margin-bottom:33px; outline:none;}
+.left-column .form input, .left-column .form textarea, select, option{font:12px Tahoma, Arial, sans-serif !important; color:#00789c; width:100%; border:none; background-color:#f9f8f8; border-radius:7px; height:37px; box-shadow:#7c7c7c 0 -4px 0; margin-bottom:33px; outline:none;}
+
+.select{position:relative; overflow:hidden; padding: 4px 0;}
+.select select{-webkit-appearance: none; -moz-appearance: none; appearance: none; text-indent:10px; width:100%; background:url(../images/seta-select.png) no-repeat 270px center; text-transform:uppercase; font:italic 1.4em Oswald, Arial, sans-serif !important; }
+
 .left-column .form textarea{width:97%; resize: none; overflow: auto; height:237px; padding:10px;}
 .left-column .form button{float:right; border:none; font:bold 1.6em Oswald; text-transform:uppercase; color:#FFF; text-shadow:#000 1px 1px 0; display:block; border-radius:5px; text-align:center; padding:21px 49px; cursor:pointer;
 background: #ff9b37;

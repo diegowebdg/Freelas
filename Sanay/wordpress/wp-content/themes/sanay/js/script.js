@@ -8,6 +8,7 @@ jQuery(document).ready(function(e) {
     
     /*Expand the submenu*/
     jQuery(".empreendimentos-menu").hover(function(e){
+        jQuery(this).addClass("active");
         jQuery(".submenu-empreendimentos").addClass("active");
     });
     /*End of Expand the submenu*/
@@ -22,6 +23,9 @@ jQuery(document).ready(function(e) {
 	/*Destaque hover*/
 	jQuery(".destaques #destaques-list li").hover(function(e) {
         jQuery(this).children(".detalhes-hover").css({opacity:1});
+        jQuery(this).children("h3").css({color:"#e9821b"});
+        jQuery(this).children("a:contains('Mais detalhes')").css({transform:"scale(1.1)"});
+        
     }, function(e){
 		jQuery(this).children(".detalhes-hover").css({opacity:""});
 	});
@@ -35,8 +39,9 @@ jQuery(document).ready(function(e) {
         if(jQuery("#header .mobile-view #menu-mobile .menu-list").hasClass("active")){
             jQuery("#header .mobile-view #menu-mobile .menu-list").removeClass("active");
         }
-        if(jQuery(".submenu-empreendimentos").hasClass("active")){
+        if(jQuery(".submenu-empreendimentos").hasClass("active") && jQuery(".empreendimentos-menu").hasClass("active")){
             jQuery(".submenu-empreendimentos").removeClass("active");
+            jQuery(".empreendimentos-menu").removeClass("active");
         }
     });
     /*End of Mobile menu click | Scroll*/

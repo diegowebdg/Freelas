@@ -20,7 +20,7 @@
                             
                             <!-- Logo -->
                             <div class="logo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/sanay-logo.png" width="176" height="54" alt="Sanay | Desenvolvimento Imobiliário" title="Sanay | Desenvolvimento Imobiliário">
+                                <a href="<?php echo home_url(); ?>/" title="Voltar para a página inicial"><img src="<?php bloginfo('template_directory'); ?>/images/sanay-logo.png" width="176" height="54" alt="Sanay | Desenvolvimento Imobiliário" title="Sanay | Desenvolvimento Imobiliário"></a>
                             </div>
                             <!-- End of Logo -->
                             

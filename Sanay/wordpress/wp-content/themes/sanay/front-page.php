@@ -64,8 +64,8 @@
                             <li class="lancamento borders animate"><a href="<?php echo home_url(); ?>/category/lancamentos/" title="Lançamento">Lançamento</a></li>
                             <li class="futuro-lancamento borders animate"><a href="<?php echo home_url(); ?>/category/futuro-lancamento/" title="Futuro Lançamento">Futuro Lançamento</a></li>
                             <li class="entregues borders animate"><a href="<?php echo home_url(); ?>/category/entregues/" title="Entregues">Entregues</a></li>
-                            <li class="bairro borders animate"><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
-                            <li class="corretor borders"><a href="#" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
+                            <li class="bairro borders animate" ><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
+                            <li class="corretor borders" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online"><a href="#">Fale agora com nosso <strong>corretor online</strong></a></li>
                         </ul>
                         <div class="clear"></div>
                     </div>

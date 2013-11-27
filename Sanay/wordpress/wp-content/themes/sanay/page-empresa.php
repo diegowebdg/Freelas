@@ -108,7 +108,7 @@
     	<div class="destaques">
         	<div class="content-center">
                 <div class="page-margin">
-                    <h2>Veja os imóveis que podem te interessar</h2>
+                    <h2>Em destaque</h2>
                     <!--Destaques Slider-->
                     <div class="destaques-slider">
                         <div class="viewport">

@@ -328,21 +328,23 @@
             </div>
     	</div>
 		
-		<!-- Destaques -->
-    	<div class="destaques">
-        	<div class="content-center">
-                <div class="page-margin">
-                    <h2>Veja os imóveis que podem te interessar</h2>
-                    <!--Destaques Slider-->
-                    <div class="destaques-slider">
-                        <div class="viewport">
-                            <ul id="destaques-list">
+		
                                 
                                 <?php
-                                    $posts = get_field('destaques', 27);
+                                    $posts = get_field('relacionados');
                                     
                                     if( $posts ): ?>
                                         
+                                        <!-- Destaques -->
+                                        <div class="destaques">
+                                            <div class="content-center">
+                                                <div class="page-margin">
+                                                    <h2>Veja os imóveis que podem te interessar</h2>
+                                                    <!--Destaques Slider-->
+                                                    <div class="destaques-slider">
+                                                        <div class="viewport">
+                                                            <ul id="destaques-list">
+        
                                         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
                                             <?php setup_postdata($post); ?>
                                                 <li>
@@ -360,21 +362,24 @@
                                                     <a href="<?php the_permalink(); ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
                                                 </li>
                                         <?php endforeach; ?>
-                                        
-                                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-                                <?php endif ?>
-                                
-                            </ul>
+                                                                </ul>
                         </div>
                         <div class="clear"></div>
                         
                     </div>
+                                        
+                                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                                             
                     <!--Destaques Slider-->
                 
                 </div>
            </div>
     	</div>
-    	<!-- End of Destaques -->
+    	<!-- End of Destaques -->                   
+                                                                
+                                <?php endif ?>
+                                
+                            
     	
 	</div>
     <!-- End of Content -->
@@ -383,6 +388,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/sidebar.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/single.js"></script>
 <!-- End of Scripts -->

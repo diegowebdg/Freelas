@@ -4205,5 +4205,5 @@ function reset_mbstring_encoding() {
 	mbstring_binary_safe_encoding( true );
 }
 
-define('WP_HOME','http://192.168.1.14:8888/');
-define('WP_SITEURL','http://192.168.1.14:8888/');
+define('WP_HOME','http://localhost:8888/');
+define('WP_SITEURL','http://localhost:8888/');
