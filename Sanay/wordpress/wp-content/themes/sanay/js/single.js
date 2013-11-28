@@ -242,5 +242,11 @@ $(document).ready(function(e) {
     $(".ficha-tecnica li span a[href*='http://']").parent().parent().remove();
     /*End of Hide empty Ficha Técnica <li>*/
     
+    /*Remove Image if don't have text*/
+    if($(".main-img-txt").find("p").length == 0){
+        $(".main-img-txt").remove();
+    }
+    /*END OF Remove Image if don't have text*/
+    
 	
 });
