@@ -95,8 +95,9 @@ $(document).ready(function(e) {
     
     /*Planta Galery Thumbs - Link*/
     var plantaimageList    = new Array();
-    var plantacurrentImage = 0;
+    var plantacurrentImage = -1;
     $(".planta-gallery .thumbs a").each(function(index, element) {
+        if (plantacurrentImage == -1)plantacurrentImage = 0;
         plantaimageList[ index ]         = new Object();
         plantaimageList[ index ].id      = index;
         plantaimageList[ index ].element = $(element);
@@ -140,7 +141,7 @@ $(document).ready(function(e) {
         plantagalleryViewportMargin = parseFloat(plantaviewportMargin) - parseFloat(plantaliDistance) + "px";
         $(".planta-gallery .viewport").css("margin-left", plantagalleryViewportMargin);
     } );
-    plantaimageList[ plantacurrentImage ].element.addClass("selected");
+    if(plantacurrentImage != -1)plantaimageList[ plantacurrentImage ].element.addClass("selected");
     
     $(".planta-gallery .selectors a").click(function(e) {
         event.preventDefault();
@@ -238,6 +239,7 @@ $(document).ready(function(e) {
     
     /*Hide empty Ficha Técnica <li>*/
     $(".ficha-tecnica li span:empty").parent().remove();
+    $(".ficha-tecnica li span a[href*='http://']").parent().parent().remove();
     /*End of Hide empty Ficha Técnica <li>*/
     
 	
