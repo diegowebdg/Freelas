@@ -11,7 +11,7 @@
             <?php
                                 
                 $slider = array();
-                for($x=1;$x<=3;$x++)
+                for($x=1;$x<=8;$x++)
                 {
                     
                     if(get_field('slider_' . $x))

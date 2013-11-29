@@ -28,7 +28,7 @@
                     
                         <?php echo '<div class="selected-menu" style="left:24.5%;"></div>' ?>
                         <style>
-                            .obra, .futuro-lancamento, .entregues, .bairro{opacity:0.6 !important;}
+                            .obra, .futuro-lancamento, .entregues, .bairro{opacity:0.2 !important;}
                             .lancamento{opacity:1 !important;}
                         </style>
                     
@@ -44,7 +44,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:40.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .entregues, .bairro{opacity:0.6 !important;}
+                            .lancamento, .obra, .entregues, .bairro{opacity:0.2 !important;}
                             .futuro-lancamento{opacity:1 !important;}
                         </style>
                     
@@ -52,7 +52,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:72.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .entregues, .futuro-lancamento{opacity:0.6 !important;}
+                            .lancamento, .obra, .entregues, .futuro-lancamento{opacity:0.2 !important;}
                             .bairro{opacity:1 !important;}
                         </style>
                     
@@ -60,7 +60,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:56.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .bairro, .futuro-lancamento{opacity:0.6 !important;}
+                            .lancamento, .obra, .bairro, .futuro-lancamento{opacity:0.2 !important;}
                             .entregues{opacity:1 !important;}
                         </style>
                 
