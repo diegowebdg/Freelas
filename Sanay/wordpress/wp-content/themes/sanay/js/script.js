@@ -11,24 +11,29 @@ jQuery(document).ready(function(e) {
     
     /* Submenu produtos */
  
-    var inner = false;
-    jQuery( ".empreendimentos-menu" ).on( {mouseenter: function(e){
-        jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeIn();
-        jQuery( ".empreendimentos-menu" ).addClass("active");
-        
-    },
-    mouseleave: function(e){
+ var inner = false;
     
-    var time = setInterval( function(){
+ jQuery( ".empreendimentos-menu" ).on( {mouseenter: function(e){
+   
+     jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeIn();
+     jQuery( ".empreendimentos-menu" ).addClass("active");
     
-        if( !inner ){
-            jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeOut();
-            jQuery( ".empreendimentos-menu" ).removeClass("active");
-            clearInterval( time );
-        }
-        }, 200 );
-        }
-    } );
+  },
+  mouseleave: function(e){
+   
+   var time = setInterval( function(){
+    
+    if( !inner ){
+     jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeOut();
+        jQuery( ".empreendimentos-menu" ).removeClass("active");
+     clearInterval( time );
+    }
+    
+   }, 200 );
+   
+  }
+  
+ } );
  
  jQuery( ".submenu-empreendimentos" ).on( {
   
@@ -49,6 +54,25 @@ jQuery(document).ready(function(e) {
  
  /* Fim submenu produtos */
     
+    
+    
+    
+    
+    
+    
+    /*Expand the submenu*/
+    /*jQuery(".empreendimentos-menu").hover(function(e){
+        jQuery(this).addClass("active");
+        jQuery(".submenu-empreendimentos").addClass("active");
+        jQuery("#header .hover").css({opacity:1});
+    });
+    
+    jQuery(".submenu-empreendimentos").mouseout(function(e){
+        jQuery(".empreendimentos-menu").removeClass("active");
+        jQuery(".submenu-empreendimentos").removeClass("active");
+        jQuery("#header .hover").css({opacity:0});
+    });*/
+    /*End of Expand the submenu*/
     
     /*Content Menu Click*/
     jQuery(".content-menu li").click(function(e){

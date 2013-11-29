@@ -245,6 +245,7 @@ $(document).ready(function(e) {
     /*Remove Image if don't have text*/
     if($(".main-img-txt").find("p").length == 0){
         $(".main-img-txt").remove();
+        console.log("works");
     }
     /*END OF Remove Image if don't have text*/
     
