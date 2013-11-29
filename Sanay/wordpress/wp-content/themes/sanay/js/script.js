@@ -6,9 +6,6 @@ jQuery(document).ready(function(e) {
 		}
     });
     
-    
-    
-    
     /* Submenu produtos */
  
  var inner = false;
@@ -54,26 +51,6 @@ jQuery(document).ready(function(e) {
  
  /* Fim submenu produtos */
     
-    
-    
-    
-    
-    
-    
-    /*Expand the submenu*/
-    /*jQuery(".empreendimentos-menu").hover(function(e){
-        jQuery(this).addClass("active");
-        jQuery(".submenu-empreendimentos").addClass("active");
-        jQuery("#header .hover").css({opacity:1});
-    });
-    
-    jQuery(".submenu-empreendimentos").mouseout(function(e){
-        jQuery(".empreendimentos-menu").removeClass("active");
-        jQuery(".submenu-empreendimentos").removeClass("active");
-        jQuery("#header .hover").css({opacity:0});
-    });*/
-    /*End of Expand the submenu*/
-    
     /*Content Menu Click*/
     jQuery(".content-menu li").click(function(e){
         var linkSrc = jQuery(this).children("a").attr("href");
@@ -107,11 +84,6 @@ jQuery(document).ready(function(e) {
         if(jQuery("#header .mobile-view #menu-mobile .menu-list").hasClass("active")){
             jQuery("#header .mobile-view #menu-mobile .menu-list").removeClass("active");
         }
-        /*if(jQuery(".submenu-empreendimentos").hasClass("active") && jQuery(".empreendimentos-menu").hasClass("active")){
-            jQuery(".submenu-empreendimentos").removeClass("active");
-            jQuery(".empreendimentos-menu").removeClass("active");
-            jQuery("#header .hover").css({opacity:0});
-        }*/
     });
     /*End of Mobile menu click | Scroll*/
     
@@ -127,7 +99,7 @@ jQuery(document).ready(function(e) {
     /*End of Filter Duplicates in bairros-list*/
     
     /*Encontre Imóveis Hover*/
-    jQuery(".encontre-imoveis a").hover(function(e){
+    jQuery(".encontre-imoveis a, #header .home-link").hover(function(e){
         jQuery(this).animate({opacity:0.6}, 200);
     }, function(e){
         jQuery(this).animate({opacity:1}, 200);

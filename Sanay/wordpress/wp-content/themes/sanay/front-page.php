@@ -14,17 +14,17 @@
                 for($x=1;$x<=8;$x++)
                 {
                     
-                    if(get_field('slider_' . $x))
+                    if(get_field('slider_final_' . $x))
                     {
                         
-                        $slider[$x-1]["image"] = get_field('slider_' . $x);
+                        $slider[$x-1]["image"] = get_field('slider_final_' . $x);
                         
-                        $slider[$x-1]["link-img"] = get_field('slider_link_' . $x);
+                        $slider[$x-1]["link-img"] = get_field('slider_link_final_' . $x);
                         
-                        $slider[$x-1]["image_caption"] = get_field('slider_img_interna_' . $x);
-                        $slider[$x-1]["title"] = get_field('slider_titulo_' . $x);
-                        $slider[$x-1]["region"] = get_field('slider_localizacao_new_' . $x);
-                        $slider[$x-1]["description"] = get_field('slider_descricao_' . $x);
+                        $slider[$x-1]["image_caption"] = get_field('slider_img_interna_final_' . $x);
+                        $slider[$x-1]["title"] = get_field('slider_titulo_final_' . $x);
+                        $slider[$x-1]["region"] = get_field('slider_localizacao_final_' . $x);
+                        $slider[$x-1]["description"] = get_field('slider_descricao_final_' . $x);
                     }
                     else
                     {
