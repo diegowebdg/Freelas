@@ -95,17 +95,15 @@ a{text-decoration:none; display:block;}
 #header{padding: 20px 0; border-bottom: solid 2px #e9821b;}
 #header .logo{background: url(images/sanay-logo.png) no-repeat; width: 197px; padding-top: 61px; float:left;}
 #header #menu{float:right; padding-top: 12px; display:table;}
-#header #menu li{float:left; display:block; min-height:38px;}
-#header #menu li a{display:block; font-style:italic; color:#616161; text-transform:uppercase; margin-left:10px; font-size:1.6em; line-height:2em !important;}
+#header #menu li{float:left; display:block; min-height:38px; margin-left:12px;}
+#header #menu li a{display:block; font-style:italic; color:#616161; text-transform:uppercase; margin-left:10px; font-size:1.6em; line-height:2em !important; padding-top: 4px;}
 #header #menu li a:hover{color:#e9821b;}
-#header #menu li a:after{content:" • "; font-size:1.9em; position:relative; top:5px;}
 #header #menu li a.home-link{background:url(images/menu-home.png) no-repeat; width:28px; padding-top:28px; margin: 6px 0 0 10px; }
-#header #menu li a.fale-conosco:after, #header #menu li a.corretores:after{content:"" !important;}
-#header #menu li a.corretores{background:url(images/menu-corretor-online.png) no-repeat; width:38px; padding:0 0 0 53px; margin-left:54px; width:inherit; color:#e9821b;}
+#header #menu li a.corretores{background:url(images/menu-corretor-online.png) no-repeat; width:125px; padding:4px 0 0 53px; margin-left:25px; color:#e9821b; min-height:38px;}
 #header #menu li a.corretores:hover{text-decoration:underline;}
 #header .empreendimentos-menu{position:relative; z-index:1;}
 #header .empreendimentos-menu.active{color:#FFF !important;}
-#header .empreendimentos-menu.active:after{color:#616161;}
+/*#header .empreendimentos-menu.active:after{color:#616161;}*/
 
 /* Header MOBILE */
 #header .mobile-view{display:none;}
@@ -121,14 +119,14 @@ a{text-decoration:none; display:block;}
 #header .mobile-view #menu-mobile .menu-expand{width:33px; height:29px; background:url(images/menu-expand.png) no-repeat; display:table; margin:20px auto 0 auto;}
 
 /*Submenu Empreendimentos*/
-.submenu-empreendimentos{ position:relative; overflow:hidden; height:0;}
-.submenu-empreendimentos.active{height:60px; }
-.submenu-empreendimentos .page-margin{padding:20px 0; background-color:#e9821b;}
-.submenu-empreendimentos ul{display:table; margin:0 auto; min-width:760px;}
-.submenu-empreendimentos li{float:left; margin-right:10%;}
-.submenu-empreendimentos li a{font:italic 1.5em Oswald, Arial, sans-serif; color: #FFF; text-transform: uppercase;}
+.submenu-empreendimentos{ position:absolute; padding:15px 0 10px 55px; background-color:#e9821b; z-index:2; left: -374px; top: 70px; display:none;}
+.submenu-empreendimentos.active{display:block }
+.submenu-empreendimentos ul{display:table; margin:0 auto; min-width:860px;}
+.submenu-empreendimentos li{float:left; margin:0 10% 0 0 !important;}
+.submenu-empreendimentos li a{font:italic 1.5em Oswald, Arial, sans-serif !important; color: #FFF !important; text-transform: uppercase;}
 .submenu-empreendimentos li a:hover{text-decoration:underline;}
-#header .hover{position:absolute; width:125px; height:100px; background-color:#e9821b;left:0px; top:0px; opacity:0;}
+#header .hover{position:absolute; width:125px; height:100px; background-color:#e9821b;left:0px; top:0px; display:none;}
+#header .hover.active{display:block;}
 /*End of Submenu Empreendimentos*/
 
 /*Destaques*/
@@ -143,11 +141,12 @@ a{text-decoration:none; display:block;}
 .destaques .destaque-info{padding:21px 27px;}
 .destaques .destaque-info *{text-transform:uppercase;}
 .destaques .destaque-info h3{font:bold 2em Oswald; color:#404040; margin-bottom:20px;}
+.destaques .destaque-info h3 a{display:block; color:inherit;}
 .destaques .destaque-info span{font:italic 12px Oswald; color:#a5a5a5; display:block; text-transform:uppercase; margin-bottom:20px;}
 .destaques .destaque-info p{font:italic 14px Oswald; color:#404040; margin-bottom:20px;}
 .destaques #destaques-list p.nenhum-encontrado{font-size:2em;}
-.destaques #destaques-list a{font:bold 1.6em Oswald; text-transform:uppercase; color:#FFF; text-shadow:#000 1px 1px 0; display:block; border-radius:25px; text-align:center; padding:13px 49px; width:auto; margin:0 auto -25px auto; width:120px; background: #ffb76f; background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b)); background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );}
-.destaques #destaques-list .detalhes-hover{width:220px; padding-top:100%; position:absolute; background:url(images/veja-mais-detalhes.png) no-repeat center 25px; top:0; left:0; opacity:0;}
+.destaques #destaques-list a[title*='Mais detalhes']{font:bold 1.6em Oswald; text-transform:uppercase; color:#FFF; text-shadow:#000 1px 1px 0; display:block; border-radius:25px; text-align:center; padding:13px 49px; width:auto; margin:0 auto -25px auto; width:120px; background: #ffb76f; background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b)); background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%); background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );}
+.destaques #destaques-list .detalhes-hover{width:320px; padding-top:230px; position:absolute; background:url(images/veja-mais-detalhes.png) no-repeat center 25px; top:0; left:0; opacity:0;}
 
 /*Post img*/
 .post-img{height:196px; border-bottom:solid 5px #00789c;}

@@ -6,13 +6,50 @@ jQuery(document).ready(function(e) {
 		}
     });
     
-    /*Expand the submenu*/
-    jQuery(".empreendimentos-menu").hover(function(e){
-        jQuery(this).addClass("active");
-        jQuery(".submenu-empreendimentos").addClass("active");
-        jQuery("#header .hover").delay(1000).css({opacity:1});
-    });
-    /*End of Expand the submenu*/
+    /* Submenu produtos */
+ 
+ var inner = false;
+    
+ jQuery( ".empreendimentos-menu" ).on( {mouseenter: function(e){
+   
+     jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).fadeIn();
+     jQuery( ".empreendimentos-menu" ).addClass("active");
+    
+  },
+  mouseleave: function(e){
+   
+   var time = setInterval( function(){
+    
+    if( !inner ){
+     jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).fadeOut();
+        jQuery( ".empreendimentos-menu" ).removeClass("active");
+     clearInterval( time );
+    }
+    
+   }, 200 );
+   
+  }
+  
+ } );
+ 
+ jQuery( ".submenu-empreendimentos" ).on( {
+  
+  mouseenter: function(e){
+   
+   inner = true;
+   
+  },
+  mouseleave: function(e){
+   
+   jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).delay( 200 ).fadeOut();
+      jQuery( ".empreendimentos-menu" ).removeClass("active");
+   inner = false;
+   
+  }
+  
+ } );
+ 
+ /* Fim submenu produtos */
     
     /*Content Menu Click*/
     jQuery(".content-menu li").click(function(e){
@@ -22,15 +59,20 @@ jQuery(document).ready(function(e) {
     /*End of Content Menu Click*/
 	
 	/*Destaque hover*/
-	jQuery(".destaques #destaques-list li").hover(function(e) {
-        jQuery(this).children(".detalhes-hover").css({opacity:1});
-        jQuery(this).children(".destaque-info").children("h3").css({color:"#e9821b"});
-        jQuery(this).children("a[title*='Mais detalhes']").css({background:"#e9821b"});
-        
+    jQuery(".detalhes-hover").hover(function(e) {
+        jQuery(this).css({opacity:1});
     }, function(e){
-		jQuery(this).children(".detalhes-hover").css({opacity:""});
-        jQuery(this).children(".destaque-info").children("h3").css({color:""});
-        jQuery(this).children("a[title*='Mais detalhes']").css({background:""});
+		jQuery(this).css({opacity:""});
+	});
+    jQuery(".destaque-info h3").hover(function(e) {
+        jQuery(this).css({color:"#e9821b"});
+    }, function(e){
+		jQuery(this).css({color:""});
+	});
+    jQuery(".destaques #destaques-list li").children("a[title*='Mais detalhes']").hover(function(e) {
+        jQuery(this).css({background:"#e9821b"});
+    }, function(e){
+		jQuery(this).css({background:""});
 	});
 	/*End of Destaque hover*/
     
@@ -41,11 +83,6 @@ jQuery(document).ready(function(e) {
     jQuery(window).scroll(function(e){
         if(jQuery("#header .mobile-view #menu-mobile .menu-list").hasClass("active")){
             jQuery("#header .mobile-view #menu-mobile .menu-list").removeClass("active");
-        }
-        if(jQuery(".submenu-empreendimentos").hasClass("active") && jQuery(".empreendimentos-menu").hasClass("active")){
-            jQuery(".submenu-empreendimentos").removeClass("active");
-            jQuery(".empreendimentos-menu").removeClass("active");
-            jQuery("#header .hover").css({opacity:0});
         }
     });
     /*End of Mobile menu click | Scroll*/
@@ -60,6 +97,14 @@ jQuery(document).ready(function(e) {
             seen[txt] = true;
     });
     /*End of Filter Duplicates in bairros-list*/
+    
+    /*Encontre Imóveis Hover*/
+    jQuery(".encontre-imoveis a, #header .home-link").hover(function(e){
+        jQuery(this).animate({opacity:0.6}, 200);
+    }, function(e){
+        jQuery(this).animate({opacity:1}, 200);
+    });
+    /*End of Encontre Imóveis Hover*/
     
 });
 

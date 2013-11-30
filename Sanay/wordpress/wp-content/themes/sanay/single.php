@@ -166,6 +166,7 @@
                         the_content();
                 endwhile; ?>
                     <?php endif; ?>
+                    <div class="clear"></div>
                 </div>
                 <!-- End of Main img | txt -->
                 

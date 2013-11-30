@@ -72,7 +72,19 @@
                             <li><a href="<?php echo home_url(); ?>/empresa/" title="A empresa">A empresa</a></li>
                             <li class="relative">
                                 <a href="#" title="Empreendimentos" class="empreendimentos-menu">Empreendimentos</a>
-                                <div class="hover animate"></div>
+                                <div class="hover"></div>
+                                
+                                <div class="submenu-empreendimentos">
+                                    <ul>
+                                        <li class="obra"><a href="<?php echo home_url(); ?>/category/em-obra/" title="Em obra">Em obra</a></li>
+                                        <li class="lancamento"><a href="<?php echo home_url(); ?>/category/lancamentos/" title="Lançamento">Lançamento</a></li>
+                                        <li class="futuro-lancamento"><a href="<?php echo home_url(); ?>/category/futuro-lancamento/" title="Futuro Lançamento">Futuro Lançamento</a></li>
+                                        <li class="entregues"><a href="<?php echo home_url(); ?>/category/entregues/" title="Entregues">Entregues</a></li>
+                                        <li class="bairro"><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                                
                             </li>
                             <li><a href="<?php echo home_url(); ?>/parceiros/" title="Parceiros">Parceiros</a></li>
                             <li><a href="<?php echo home_url(); ?>/contato/" class="fale-conosco" title="Fale conosco">Fale conosco</a></li>
@@ -114,20 +126,3 @@
         </div>
     </div>
     <!--End of Header-->
-    
-    <!--Menu Empreendimentos-->
-    <div class="submenu-empreendimentos animate">
-        <div class="content-center">
-            <div class="page-margin">
-                <ul>
-                    <li class="obra"><a href="<?php echo home_url(); ?>/category/em-obra/" title="Em obra">Em obra</a></li>
-                    <li class="lancamento"><a href="<?php echo home_url(); ?>/category/lancamentos/" title="Lançamento">Lançamento</a></li>
-                    <li class="futuro-lancamento"><a href="<?php echo home_url(); ?>/category/futuro-lancamento/" title="Futuro Lançamento">Futuro Lançamento</a></li>
-                    <li class="entregues"><a href="<?php echo home_url(); ?>/category/entregues/" title="Entregues">Entregues</a></li>
-                    <li class="bairro"><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-    <!--End of Menu Empreendimentos-->

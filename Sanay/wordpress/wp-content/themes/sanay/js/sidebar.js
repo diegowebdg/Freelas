@@ -65,13 +65,18 @@ $(document).ready(function(e) {
 			}else{
 				campos=campos+"- Nome\n";
 			}
-            if($('#email_duvidas').val()!="") {     
-				       
-				conta++;      
-
-			}else{
-				campos=campos+"- E-mail\n";
-			}   
+            if($('#email_duvidas').val()!="") {
+            
+                var filtro_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                
+                if(filtro_email.test($('#email_duvidas').val())){
+                    conta++;      
+                }else{
+                    campos=campos+"- Email Inválido\n";
+                }
+            }else{
+                campos=campos+"- E-mail\n";
+            }
 			    			     			     
 			if($('#ddd_tel_duvidas').val()!="") {     
 				       
@@ -126,13 +131,18 @@ $(document).ready(function(e) {
 			}else{
 				campos=campos+"- Seu Nome\n";
 			}
-            if($('#seu_email_indique').val()!="") {     
-				       
-				conta++;      
-
-			}else{
-				campos=campos+"- Seu E-mail\n";
-			}   
+            if($('#seu_email_indique').val()!="") {
+            
+                var filtro_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                
+                if(filtro_email.test($('#seu_email_indique').val())){
+                    conta++;      
+                }else{
+                    campos=campos+"- Email Inválido\n";
+                }
+            }else{
+                campos=campos+"- Seu E-mail\n";
+            } 
 			    			     			     
 			if($('#nome_amigo_indique').val()!="") {     
 				       

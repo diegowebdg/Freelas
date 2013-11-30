@@ -14,17 +14,17 @@
                 for($x=1;$x<=8;$x++)
                 {
                     
-                    if(get_field('slider_' . $x))
+                    if(get_field('slider_final_' . $x))
                     {
                         
-                        $slider[$x-1]["image"] = get_field('slider_' . $x);
+                        $slider[$x-1]["image"] = get_field('slider_final_' . $x);
                         
-                        $slider[$x-1]["link-img"] = get_field('slider_link_' . $x);
+                        $slider[$x-1]["link-img"] = get_field('slider_link_final_' . $x);
                         
-                        $slider[$x-1]["image_caption"] = get_field('slider_img_interna_' . $x);
-                        $slider[$x-1]["title"] = get_field('slider_titulo_' . $x);
-                        $slider[$x-1]["region"] = get_field('slider_localizacao_new_' . $x);
-                        $slider[$x-1]["description"] = get_field('slider_descricao_' . $x);
+                        $slider[$x-1]["image_caption"] = get_field('slider_img_interna_final_' . $x);
+                        $slider[$x-1]["title"] = get_field('slider_titulo_final_' . $x);
+                        $slider[$x-1]["region"] = get_field('slider_localizacao_final_' . $x);
+                        $slider[$x-1]["description"] = get_field('slider_descricao_final_' . $x);
                     }
                     else
                     {
@@ -115,7 +115,7 @@
                                                         <span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
                                                     </div>
                                                     <div class="destaque-info">
-                                                        <h3><?php the_title(); ?></h3>
+                                                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                                         <span><?php echo get_field("bairro"); ?></span>
                                                         <p><?php echo get_field("description"); ?></p>
                                                     </div>

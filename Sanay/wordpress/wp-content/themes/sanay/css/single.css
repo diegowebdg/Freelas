@@ -103,7 +103,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .ficha-tecnica a{display:inline;}
 .ficha-tecnica pre{display:inline;}
 .ficha-tecnica .block{display:block;}
-.ficha-tecnica .acesse{color:#024e65; text-decoration:underline;}
+.ficha-tecnica .acesse{color:#ff9b37}
+.ficha-tecnica .acesse:hover{color:#024e65; text-decoration:underline}
 
 /*Localicação*/
 .localizacao{margin-bottom:40px;}

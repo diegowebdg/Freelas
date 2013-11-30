@@ -1,4 +1,5 @@
-    <!--Footer-->
+
+<!--Footer-->
     <div id="footer">
     	
                 
@@ -29,7 +30,7 @@
                                 <span class="name">Sanay Desenvolvimento Imobiliário LTDA</span>
                                 <div class="info-txt">
                                     <address>Rua: Álvaro Anes, 46 - 3º Andar - Pinheiros - SP</address>
-                                    <span class="tel">Tel: <a href="tel:1125331270">(11) 25331270</a></span>
+                                    <span class="tel">Tel: <a href="tel:1125331270">(11) 2533-1270</a></span>
                                     <span class="email">e-mail: <a href="mailto:sanay@sanay.com.br">sanay@sanay.com.br</a></span>
                                 </div>
                                 <small>2013 - copyright &copy;  Todos os direitos reservados.</small>
@@ -82,7 +83,7 @@
                                 <span class="name">Sanay Desenvolvimento Imobiliário LTDA</span>
                                 <div class="info-txt">
                                     <address>Rua: Álvaro Anes, 46 - 3º Andar - Pinheiros - SP</address>
-                                    <span class="tel">Tel: <a href="tel:1125331270">(11) 25331270</a></span>
+                                    <span class="tel">Tel: <a href="tel:1125331270">(11) 2533-1270</a></span>
                                     <span class="email">e-mail: <a href="mailto:sanay@sanay.com.br">sanay@sanay.com.br</a></span>
                                 </div>
                                 <small>2013 - copyright &copy;  Todos os direitos reservados.</small>
