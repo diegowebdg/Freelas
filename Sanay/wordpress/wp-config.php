@@ -16,15 +16,15 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'rafaelb_sanay');
 
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'rafaelb_sanay');
 
 
 /** MySQL database password */
-define('DB_PASSWORD', '1q2w3e');
+define('DB_PASSWORD', 'sanay1q2w3e');
 
 
 /** MySQL hostname */
@@ -71,7 +71,7 @@ define('NONCE_SALT',       '.7pQ}|K+dTcU(e-{g`e=(U/M<qXGu6Z_v<ge[~YYF1m>gQi<og!<
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_noria_';
+$table_prefix  = 'wp_rafaelb_';
 
 
 /**
@@ -82,7 +82,7 @@ $table_prefix  = 'wp_noria_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define('WPLANG', 'pt_BR');
 
 /**
  * For developers: WordPress debugging mode.

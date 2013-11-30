@@ -72,9 +72,15 @@
                             <li><a href="<?php echo home_url(); ?>/empresa/" title="A empresa">A empresa</a></li>
                             <li class="relative">
                                 <a href="#" title="Empreendimentos" class="empreendimentos-menu">Empreendimentos</a>
+<<<<<<< HEAD
                                 <div class="hover"></div>
                                 
                                 <div class="submenu-empreendimentos">
+=======
+                                <!--Menu Empreendimentos-->
+                                <div class="submenu-empreendimentos">
+                                    <div class="hover"></div>
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662
                                     <ul>
                                         <li class="obra"><a href="<?php echo home_url(); ?>/category/em-obra/" title="Em obra">Em obra</a></li>
                                         <li class="lancamento"><a href="<?php echo home_url(); ?>/category/lancamentos/" title="Lançamento">Lançamento</a></li>
@@ -84,7 +90,11 @@
                                     </ul>
                                     <div class="clear"></div>
                                 </div>
+<<<<<<< HEAD
                                 
+=======
+                                <!--End of Menu Empreendimentos-->
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662
                             </li>
                             <li><a href="<?php echo home_url(); ?>/parceiros/" title="Parceiros">Parceiros</a></li>
                             <li><a href="<?php echo home_url(); ?>/contato/" class="fale-conosco" title="Fale conosco">Fale conosco</a></li>
@@ -126,3 +136,7 @@
         </div>
     </div>
     <!--End of Header-->
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662

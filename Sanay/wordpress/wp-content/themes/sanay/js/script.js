@@ -12,7 +12,11 @@ jQuery(document).ready(function(e) {
     
  jQuery( ".empreendimentos-menu" ).on( {mouseenter: function(e){
    
+<<<<<<< HEAD
      jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).fadeIn();
+=======
+     jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeIn();
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662
      jQuery( ".empreendimentos-menu" ).addClass("active");
     
   },
@@ -21,7 +25,11 @@ jQuery(document).ready(function(e) {
    var time = setInterval( function(){
     
     if( !inner ){
+<<<<<<< HEAD
      jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).fadeOut();
+=======
+     jQuery( ".submenu-empreendimentos" ).stop( true, true ).fadeOut();
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662
         jQuery( ".empreendimentos-menu" ).removeClass("active");
      clearInterval( time );
     }
@@ -41,7 +49,11 @@ jQuery(document).ready(function(e) {
   },
   mouseleave: function(e){
    
+<<<<<<< HEAD
    jQuery( ".submenu-empreendimentos, .hover" ).stop( true, true ).delay( 200 ).fadeOut();
+=======
+   jQuery( ".submenu-empreendimentos" ).stop( true, true ).delay( 200 ).fadeOut();
+>>>>>>> 4b0a5cf741fdd0a81cb06db431c38a65c3c7f662
       jQuery( ".empreendimentos-menu" ).removeClass("active");
    inner = false;
    
