@@ -32,7 +32,7 @@ $search = new WP_Query($search_query);
                             <li class="futuro-lancamento borders animate"><a href="<?php echo home_url(); ?>/category/futuro-lancamento/" title="Futuro Lançamento">Futuro Lançamento</a></li>
                             <li class="entregues borders animate"><a href="<?php echo home_url(); ?>/category/entregues/" title="Entregues">Entregues</a></li>
                             <li class="bairro borders animate"><a href="<?php echo home_url(); ?>/category/bairro/" title="Por bairro">Por bairro</a></li>
-                            <li class="corretor borders animate"><a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
+                            <li class="corretor borders"><a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
                         </ul>
                         <div class="clear"></div>
                     </div>
@@ -67,11 +67,12 @@ $search = new WP_Query($search_query);
     	<!-- End of Content Menu -->
     	
         <!--Array dos posts-->
-        <div class="destaques">
+        <div class="destaques" style="padding-bottom:90px;">
         	<div class="content-center">
                 <div class="page-margin">
                 
                     <h2>Por bairro:</h2>
+                </header><!-- .page-header -->
                     <!--Bairros Selector-->
                     <select id="bairros-list-content">
                         <option selected>Selecione aqui outros bairros:</option>
@@ -105,6 +106,10 @@ $search = new WP_Query($search_query);
                     </select>
                     <!--End of Bairros Selector-->
                     
+                    <!--Search Result-->
+                    <span class="result" style="font: italic 26px Oswald, Arial, sans-serif; color: #C7C7C7; text-transform: uppercase; position:absolute; left:450px; top: 0px;"><?php printf(get_search_query()); ?></span>
+                    <!--End of Search Result-->
+                    
                     <!--Destaques Slider-->
                     <div class="destaques-slider">
                         <div class="viewport">
@@ -119,7 +124,7 @@ $search = new WP_Query($search_query);
                                             <span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
                                         </div>
                                         <div class="destaque-info">
-                                            <h3><?php the_title(); ?></h3>
+                                            <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                             <span><?php echo get_field("bairro"); ?></span>
                                             <p><?php echo get_field("description"); ?></p>
                                         </div>
@@ -141,41 +146,6 @@ $search = new WP_Query($search_query);
             </div>
         </div>
         <!--END OF Array dos posts-->
-    	
-    	<!-- Quem somos -->
-    	<div class="quem-somos">
-            <div class="content-center">
-                <div class="page-margin">
-                    <h2>Quem somos</h2>
-                </div>
-            </div>
-    		<div class="linha"></div>
-    		
-            <div class="content-center">
-                <div class="page-margin">
-                    
-                    <div class="quem-somos-txt">
-                        <?php if( get_field('imagem_principal_home', 27) ) {
-                            $image = get_field('imagem_principal_home', 27 ); ?>
-                            <img 
-                            src="<?php echo $image['url']; ?>"
-                            alt="<?php echo $image['alt']; ?>"
-                            title="<?php echo $image['title']; ?>">
-                            
-                        <?php } ?>
-                        
-                        
-                            <?php if( get_field('quem_somos_txt', 27) ) {
-                                echo get_field('quem_somos_txt', 27 ); ?>
-                            <?php } ?>
-                            
-                            <a href="<?php echo home_url(); ?>/empresa/" title="Saiba mais sobre nós">Saiba mais sobre nós</a>
-                        <div class="clear"></div>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- End of Quem somos -->
     	
 	</div>
     <!-- End of Content -->

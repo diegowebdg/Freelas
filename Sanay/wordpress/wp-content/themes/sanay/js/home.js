@@ -8,6 +8,8 @@ jQuery(document).ready(function(e) {
     });
     /*End of Main Menu hover*/
     
+    jQuery("#menu ul li").children("a[title*='Voltar para a página inicial']").css({borderBottom:"solid 3px #02789e"});
+    
     /*Slider Hover*/
     /*jQuery(".camera_next, .camera_prev").hover(function(e){
         console.log("works");

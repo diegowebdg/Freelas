@@ -9,15 +9,9 @@
         
         $images = get_field( 'banner-post' );
         
-        if( $images ):
-        
-        	foreach( $images as $image ):
-        
-        ?>
+        if( $images ): ?>
            <div class="post-img"
-            style="background:url( <?php echo $image['url']; ?> ) no-repeat center;"></div>
-        
-        <?php endforeach; ?>
+            style="background:url( <?php echo $images; ?> ) no-repeat center;"></div>
 		
 		<?php else : ?>
         	
@@ -166,10 +160,10 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript">
 $(document).ready(function(e){
-    $("#menu ul li").children("a[title*='A empresa']").parent().css({borderBottom:"solid 3px #02789e"});
+    $("#menu ul li").children("a[title*='A empresa']").css({borderBottom:"solid 3px #02789e"});
     
-    $("#ddd_tel_ligamos").mask("(99)9999-9999");
-    $("#ddd_tel_duvidas").mask("(99)9999-9999");
+    $("#ddd_tel_ligamos").mask("(99) 9999-9999?9"); 
+    $("#ddd_tel_duvidas").mask("(99) 9999-9999?9");
 });
 </script>
 <!-- End of Scripts -->

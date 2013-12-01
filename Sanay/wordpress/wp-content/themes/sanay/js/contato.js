@@ -1,11 +1,11 @@
 $(document).ready(function(e) {
     
     
-    $("#tel").mask("(99)9999-9999");
-    $("#cel").mask("(99)9999-9999");
+    $("#tel").mask("(99) 9999-9999?9");
+    $("#cel").mask("(99) 9999-9999?9");
     
-    $("#ddd_tel_ligamos").mask("(99)9999-9999");
-    $("#ddd_tel_duvidas").mask("(99)9999-9999");
+    $("#ddd_tel_ligamos").mask("(99) 9999-9999?9"); 
+    $("#ddd_tel_duvidas").mask("(99) 9999-9999?9");
     /*Valida Campos do formulário*/
 	$(function() {
 		function validaCampos(){ 
@@ -66,10 +66,7 @@ $(document).ready(function(e) {
 	});
 	/*Fim do Valida Campos do formulário*/
     
-    
-    $(document).ready(function(e){
-        $("#menu ul li").children("a[title*='Fale conosco']").css({borderBottom:"solid 3px #02789e"});
-    });
+    $("#menu ul li").children("a[title*='Fale conosco']").css({borderBottom:"solid 3px #02789e"});
 
     
 });

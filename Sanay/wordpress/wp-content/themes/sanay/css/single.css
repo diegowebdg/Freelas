@@ -6,8 +6,9 @@ Author: Diego Rocha
 Author URL: http://www.diegowebdg.com.br
 */
 
+#content{padding-bottom: 50px;}
 h1, h2{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c; margin:0 0 29px 0;}
-.linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:15px 0;}
 
 .img-name-status img{float:left; margin-right:2.5%; max-width:175px;}
 .img-name-status .name-status h1{margin-bottom:13px !important;}

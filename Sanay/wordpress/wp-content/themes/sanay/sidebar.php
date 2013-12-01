@@ -4,7 +4,7 @@
 <div class="options">
     <ul>
         <li><a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')" class="corretores" title="<?php echo get_field("fale_com_nossos_corretores", 72); ?>"><?php echo get_field("fale_com_nossos_corretores", 72); ?></a></li>
-        <li><a href="#" class="ligamos" title="<?php echo get_field("ligamos_para_voce", 72); ?>"><?php echo get_field("ligamos_para_voce", 72); ?></a></li>
+        <li class="item1"><a href="#" class="ligamos" title="<?php echo get_field("ligamos_para_voce", 72); ?>"><?php echo get_field("ligamos_para_voce", 72); ?></a></li>
         <li class="ligamos-li">
             <form id="ligamos">
                 <input type="text" name="nome_ligamos" placeholder="NOME:" id="nome_ligamos">
@@ -14,7 +14,7 @@
             </form>
             <div class="clear"></div>
         </li>
-        <li><a href="#" class="duvidas" title="<?php echo get_field("duvidas", 72); ?>"><?php echo get_field("duvidas", 72); ?></a></li>
+        <li class="item2"><a href="#" class="duvidas" title="<?php echo get_field("duvidas", 72); ?>"><?php echo get_field("duvidas", 72); ?></a></li>
         <li class="duvidas-li">
             <form id="duvidas">
                 <input type="text" name="nome_duvidas" placeholder="NOME:" id="nome_duvidas">
@@ -25,7 +25,7 @@
             </form>
             <div class="clear"></div>
         </li>
-        <li><a href="#"  class="indique" title="<?php echo get_field("indique", 72); ?>"><?php echo get_field("indique", 72); ?></a></li>
+        <li class="item3"><a href="#"  class="indique" title="<?php echo get_field("indique", 72); ?>"><?php echo get_field("indique", 72); ?></a></li>
         <li class="indique-li">
             <form id="indique">
                 <input type="text" name="seu_nome_indique" placeholder="SEU NOME:" id="seu_nome_indique">
@@ -40,3 +40,11 @@
 </div>
 <div class="clear"></div>
 <!-- End of Options -->
+
+<script type="text/javascript">
+/*$(document).ready(function(e){
+    $(".options li").click(function(e){
+        $(this).children(a).click();
+    });
+});*/
+</script>

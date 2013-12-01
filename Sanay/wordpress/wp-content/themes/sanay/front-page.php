@@ -167,7 +167,7 @@
                             echo get_field('quem_somos_txt' ); ?>
                         <?php } ?>
                         
-                        <a href="<?php echo home_url(); ?>/empresa/" title="Saiba mais sobre nós">Saiba mais sobre nós</a>
+                        <a href="<?php echo home_url(); ?>/empresa/" title="Saiba mais sobre nós">Saiba mais sobre a Sanay</a>
                     </div>
                     <div class="clear"></div>
                     

@@ -32,6 +32,7 @@
                                     <address>Rua: Álvaro Anes, 46 - 3º Andar - Pinheiros - SP</address>
                                     <span class="tel">Tel: <a href="tel:1125331270">(11) 2533-1270</a></span>
                                     <span class="email">e-mail: <a href="mailto:sanay@sanay.com.br">sanay@sanay.com.br</a></span>
+                                    <span class="facebook"><a href="https://www.facebook.com/SanayDesenvolvimentoImobiliario" target="_blank" title="Curta nossa página no Facebook">Facebook</a></span>
                                 </div>
                                 <small>2013 - copyright &copy;  Todos os direitos reservados.</small>
                             </div>
@@ -85,6 +86,7 @@
                                     <address>Rua: Álvaro Anes, 46 - 3º Andar - Pinheiros - SP</address>
                                     <span class="tel">Tel: <a href="tel:1125331270">(11) 2533-1270</a></span>
                                     <span class="email">e-mail: <a href="mailto:sanay@sanay.com.br">sanay@sanay.com.br</a></span>
+                                    <span class="facebook"><a href="https://www.facebook.com/SanayDesenvolvimentoImobiliario" target="_blank">Facebook</a></span>
                                 </div>
                                 <small>2013 - copyright &copy;  Todos os direitos reservados.</small>
                             </div>

@@ -7,5 +7,11 @@
 	add_image_size( 'single', 283, 205, true );
     add_image_size( 'home-category', 317, 236, true );
     
-   
+function searchfilter($query) {
+    if ($query->is_search && !is_admin() ) {
+        $query->set('post_type',array('post','page'));
+    }
+    return $query;
+}
+add_filter('pre_get_posts','searchfilter');
 ?>

@@ -9,25 +9,16 @@
         
         $images = get_field( 'banner-post' );
         
-        if( $images ):
-        
-        	foreach( $images as $image ):
-        
-        ?>
+        if( $images ): ?>
            <div class="post-img"
-            style="background:url( <?php echo $image['url']; ?> ) no-repeat center;"></div>
-        
-        <?php endforeach; ?>
+            style="background:url( <?php echo $images; ?> ) no-repeat center;"></div>
 		
 		<?php else : ?>
         	
             <div class="post-img" style="background:url( <?php bloginfo('template_directory'); ?>/images/bg-default-internas.jpg) no-repeat center;"></div>
         
-        <?php endif; ?>
-        
-        
-        
-    	<!-- End of Post img -->
+        <?php endif; ?>    	
+        <!-- End of Post img -->
         
         <div class="content-center">
             <div class="page-margin">
@@ -83,14 +74,12 @@
                     </div>
                     <!-- End of Share Buttons -->
                     
-                    <h2>Conheça nossos parceiros:</h2>
-                    
                     <div class="parceiro-content">
                         
                             <?php
                                 
                                 $parceiros = array();
-                                for($x=1;$x<=8;$x++)
+                                for($x=1;$x<=30;$x++)
                                 {
                                     
                                     if(get_field('image_' . $x))
@@ -214,10 +203,10 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript">
 $(document).ready(function(e){
-    $("#menu ul li").children("a[title*='Parceiros']").parent().css({borderBottom:"solid 3px #02789e"});
+    $("#menu ul li").children("a[title*='Parceiros']").css({borderBottom:"solid 3px #02789e"});
     
-    $("#ddd_tel_ligamos").mask("(99)9999-9999");
-    $("#ddd_tel_duvidas").mask("(99)9999-9999");
+    $("#ddd_tel_ligamos").mask("(99) 9999-9999?9"); 
+    $("#ddd_tel_duvidas").mask("(99) 9999-9999?9"); 
 });
 </script>
 <!-- End of Scripts -->

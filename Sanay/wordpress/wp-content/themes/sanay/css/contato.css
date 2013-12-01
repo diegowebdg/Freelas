@@ -7,7 +7,9 @@ Author URL: http://www.diegowebdg.com.br
 */
 
 h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c;}
-.linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:15px 0;}
+
+.destaques{padding-bottom: 90px;}
 
 .left-column, .right-column{margin-bottom:120px;}
 .left-column{float:left; width:66%}

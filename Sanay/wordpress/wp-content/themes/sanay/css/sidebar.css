@@ -8,12 +8,12 @@ Author URL: http://www.diegowebdg.com.br
 
 .options{border-radius:5px; box-shadow:#7f4d1b 0 -4px 0;}
 .options li{background-color:#00789c; border-top:#409ab5 1px solid; border-bottom:solid 1px #00647d; padding:30px 0 30px 15px;}
+.options .item1:hover, .options .item2:hover, .options .item3:hover{background-color:#003C4E; cursor:pointer}
 .options li:first-child{background-color:#ff9b37;}
 .options li:first-child:hover{background-color:#e9821d;}
 .options li:first-child a{font:bold 1.6em Oswald, Arial, sans-serif;}
 .options li:last-child{border-radius: 0 0 5px 5px}
 .options a{font:italic 1.6em Oswald, Arial, sans-serif; color:#FFF; text-transform:uppercase; padding-left:57px; background-image:url(../images/bg-sidebar.png); background-repeat:no-repeat;}
-.options a:hover{text-decoration:underline}
 .options a.ligamos{background-position:0 -94px;}
 .options a.duvidas{background-position:0 -182px;}
 .options a.indique{background-position:0 -261px;}
@@ -33,5 +33,5 @@ background: -ms-linear-gradient(top, #ff9b37 0%,#d37314 98%);
 background: linear-gradient(to bottom, #ff9b37 0%,#d37314 98%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9b37', endColorstr='#d37314',GradientType=0 );
 }
-
+button:hover{background:#ff9b37 !important;}
 .ligamos-li, .duvidas-li, .indique-li{display:none;}

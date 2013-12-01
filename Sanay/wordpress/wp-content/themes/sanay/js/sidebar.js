@@ -186,13 +186,13 @@ $(document).ready(function(e) {
 	});
 	/*Fim do Valida Campos DUVIDAS*/
     
-    $("a.ligamos").click(function(e){
+    $(".options .item1").click(function(e){
         $(".ligamos-li").slideToggle();
     });
-    $("a.duvidas").click(function(e){
+    $(".options .item2").click(function(e){
         $(".duvidas-li").slideToggle();
     });
-    $("a.indique").click(function(e){
+    $(".options .item3").click(function(e){
         $(".indique-li").slideToggle();
     });
     

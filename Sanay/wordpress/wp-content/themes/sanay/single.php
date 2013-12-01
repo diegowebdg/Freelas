@@ -9,15 +9,9 @@
         
         $images = get_field( 'banner-post' );
         
-        if( $images ):
-        
-        	foreach( $images as $image ):
-        
-        ?>
+        if( $images ): ?>
            <div class="post-img"
-            style="background:url( <?php echo $image['url']; ?> ) no-repeat center;"></div>
-        
-        <?php endforeach; ?>
+            style="background:url( <?php echo $images; ?> ) no-repeat center;"></div>
 		
 		<?php else : ?>
         	

@@ -7,7 +7,9 @@ Author URL: http://www.diegowebdg.com.br
 */
 
 h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c;}
-.linha{width:100%; border-top: 1px solid #e5e5e5; margin:33px 0;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:15px 0;}
+
+.destaques{padding-bottom: 90px;}
 
 .left-column, .right-column{margin-bottom:120px;}
 .left-column{float:left; width:66%}
@@ -16,17 +18,17 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 .left-column .parceiro{border-top:solid 1px #d9d9d9; padding:30px 0;}
 .left-column .parceiro div{float:left;}
 .left-column .parceiro-img{border: solid 1px #d9d8d8; width:49%; height:132px; display:table; text-align:center;
-background: #ffffff;
+/*background: #ffffff;
 background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3));
 background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
 background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
 background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
 background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );*/
 }
 .left-column .relative{display:table-cell; text-align:center; float:none !important; vertical-align:middle;}
-.left-column .parceiro-img img{text-align:center; display:inline;}
+.left-column .parceiro-img img{text-align:center; display:inline; width: 323px; height:150px !important; border: solid 1px #BBB;}
 .left-column .parceiro-info{width:49%; display: table; height:132px;}
 .left-column .parceiro-info span{display:block; color:#7f7f7f; line-height:1.4em; font:italic 1.4em Oswald, Arial, sans-serif; text-transform:uppercase; text-align:left}
 .left-column .parceiro-info span strong{font:bold 1em Oswald, Arial, sans-serif;}

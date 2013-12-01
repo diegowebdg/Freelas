@@ -9,25 +9,16 @@
         
         $images = get_field( 'banner-post' );
         
-        if( $images ):
-        
-        	foreach( $images as $image ):
-        
-        ?>
+        if( $images ): ?>
            <div class="post-img"
-            style="background:url( <?php echo $image['url']; ?> ) no-repeat center;"></div>
-        
-        <?php endforeach; ?>
+            style="background:url( <?php echo $images; ?> ) no-repeat center;"></div>
 		
 		<?php else : ?>
         	
             <div class="post-img" style="background:url( <?php bloginfo('template_directory'); ?>/images/bg-default-internas.jpg) no-repeat center;"></div>
         
-        <?php endif; ?>
-        
-        
-        
-    	<!-- End of Post img -->
+        <?php endif; ?>    	
+        <!-- End of Post img -->
         
         <div class="content-center">
             <div class="page-margin">

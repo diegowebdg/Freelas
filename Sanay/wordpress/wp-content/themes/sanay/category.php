@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/home.css" />
 	
 	<!-- Content -->
-    <div id="content">
+    <div id="content" style="padding-bottom:0 !important">
     	
     	<!-- Content Menu -->
     	<div class="content-menu" style="margin: 30px 0 25px 0;">
@@ -28,7 +28,7 @@
                     
                         <?php echo '<div class="selected-menu" style="left:24.5%;"></div>' ?>
                         <style>
-                            .obra, .futuro-lancamento, .entregues, .bairro{opacity:0.2 !important;}
+                            .obra, .futuro-lancamento, .entregues, .bairro{opacity:0.4;}
                             .lancamento{opacity:1 !important;}
                         </style>
                     
@@ -36,7 +36,7 @@
                         
                         <?php echo '<div class="selected-menu" style="left:8.5%;"></div>' ?>
                         <style>
-                            .lancamento, .futuro-lancamento, .entregues, .bairro{opacity:0.2 !important;}
+                            .lancamento, .futuro-lancamento, .entregues, .bairro{opacity:0.4;}
                             .obra{opacity:1 !important;}
                         </style>
                 
@@ -44,7 +44,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:40.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .entregues, .bairro{opacity:0.2 !important;}
+                            .lancamento, .obra, .entregues, .bairro{opacity:0.4;}
                             .futuro-lancamento{opacity:1 !important;}
                         </style>
                     
@@ -52,7 +52,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:72.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .entregues, .futuro-lancamento{opacity:0.2 !important;}
+                            .lancamento, .obra, .entregues, .futuro-lancamento{opacity:0.4;}
                             .bairro{opacity:1 !important;}
                         </style>
                     
@@ -60,7 +60,7 @@
                 
                         <?php echo '<div class="selected-menu" style="left:56.5%;"></div>' ?>
                         <style>
-                            .lancamento, .obra, .bairro, .futuro-lancamento{opacity:0.2 !important;}
+                            .lancamento, .obra, .bairro, .futuro-lancamento{opacity:0.4;}
                             .entregues{opacity:1 !important;}
                         </style>
                 
@@ -91,7 +91,7 @@
     	<!-- End of Content Menu -->
     	
         <!--Array dos posts-->
-        <div class="destaques">
+        <div class="destaques" style="padding-bottom:90px;">
         	<div class="content-center">
                 <div class="page-margin">
                 
@@ -194,7 +194,7 @@
                                                 <span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
                                             </div>
                                             <div class="destaque-info">
-                                                <h3><?php the_title(); ?></h3>
+                                                <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                                 <span><?php echo get_field("bairro"); ?></span>
                                                 <p><?php echo get_field("description"); ?></p>
                                             </div>
@@ -236,9 +236,14 @@ jQuery(document).ready(function(e){
     
     /*Main Menu hover*/
     jQuery(".content-menu .obra, .content-menu .lancamento, .content-menu .futuro-lancamento, .content-menu .entregues, .content-menu .bairro").hover(function(e){
-        jQuery(this).css({backgroundColor:"#003C4E" }, 250);
+        jQuery(this).css({backgroundColor:"#003C4E", opacity:"1" });
     }, function(e){
-        jQuery(this).css({backgroundColor:""}, 250);
+        jQuery(this).css({backgroundColor:"", opacity:""});
+    });
+    jQuery(".submenu-empreendimentos a").hover(function(e){
+        jQuery(this).parent().css({opacity:1});
+    }, function(e){
+        jQuery(this).parent().css({opacity:""});
     });
     /*End of Main Menu hover*/
     
