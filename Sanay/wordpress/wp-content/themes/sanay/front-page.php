@@ -74,7 +74,7 @@
                     <!--Mobile View-->
                     <div class="mobile-view">
                         <div class="corretor borders">
-                            <a href="#" title="Fale agora com nosso corretor online">Fale agora com nosso corretor online</a>
+                            <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale agora com nosso corretor online">Fale agora com nosso corretor online</a>
                         </div>
                         <ul>
                             <li class="obra borders"><a href="<?php echo home_url(); ?>/category/em-obra/" title="Em obra">Em obra</a></li>

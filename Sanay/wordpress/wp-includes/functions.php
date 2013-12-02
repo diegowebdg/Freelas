@@ -4205,5 +4205,5 @@ function reset_mbstring_encoding() {
 	mbstring_binary_safe_encoding( true );
 }
 
-define('WP_HOME','http://www.rafaelbianco.com.br/projetos/sanay/wordpress/');
-define('WP_SITEURL','http://www.rafaelbianco.com.br/projetos/sanay/wordpress/');
+//define('WP_HOME','http://www.sanay.com.br/wordpress/');
+//define('WP_SITEURL','http://www.sanay.com.br/wordpr');

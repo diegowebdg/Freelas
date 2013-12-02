@@ -13,9 +13,9 @@ Author URI: http://www.diegowebdg.com.br
 .slider{ height: 458px;}
 .slider .slide-info, .slider img{float:left;}
 .slider *{text-transform:uppercase; display:block;}
-.slider .slide-info{padding:30px 89px;}
+.slider .slide-info{padding:30px 30px;}
 .slider .slide-info strong{font:bold 2em Oswald, Arial, sans-serif; color: #FFF;}
-.slider .slide-info span{margin:15px 0; font:italic 1.2em Oswald, Arial, sans-serif; color:#b4b4b4;}
+.slider .slide-info span{margin:10px 0; font:italic 1.2em Oswald, Arial, sans-serif; color:#b4b4b4;}
 .slider .slide-info p{font:italic 1.4em Oswald, Arial, sans-serif; color: #FFF;}
 
 /*Content Menu*/

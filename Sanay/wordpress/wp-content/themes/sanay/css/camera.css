@@ -68,7 +68,7 @@
 .pattern_9 .camera_overlayer{background:url(../images/patterns/overlay9.png) repeat}
 .pattern_10 .camera_overlayer{background:url(../images/patterns/overlay10.png) repeat}
 .camera_caption{color:#fff;     width:547px;     pointer-events:none}
-.camera_caption img{width:198px; height:165px;}
+.camera_caption img{width:198px;}
 .camera_caption >div{background:url(../images/bg-sliders.png) repeat}
 .camera_wrap .camera_pag .camera_pag_ul li{background:#b7b7b7}
 .camera_wrap .camera_pag .camera_pag_ul li:hover >span{background:#b7b7b7}

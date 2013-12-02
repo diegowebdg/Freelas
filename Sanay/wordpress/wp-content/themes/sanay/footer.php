@@ -9,7 +9,7 @@
                     <div class="corretores-txt">
                         <h3>Corretores Online</h3>
                         <p><?php echo get_field("corretores_online", 27); ?></p>
-                        <a href="#" title="Fale com o corretor">Fale com o corretor</a>
+                        <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale com o corretor">Fale com o corretor</a>
                     </div>
                 </div>
                 <!-- End of Corretores -->
@@ -69,7 +69,7 @@
                                     <h3>Corretores Online</h3>
                                     <p><?php echo get_field("corretores_online", 27); ?></p>
                                     <div class="clear"></div>
-                                    <a href="#" title="Fale com o corretor">Fale com o corretor</a>
+                                    <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" title="Fale com o corretor">Fale com o corretor</a>
                                 </div>
                             </div>
                             <!-- End of Corretores -->

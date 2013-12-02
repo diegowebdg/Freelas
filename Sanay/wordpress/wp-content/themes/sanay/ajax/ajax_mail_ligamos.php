@@ -25,7 +25,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "contato@sanay.com.br"; // Seu e-mail
+	$mail->From = "sanay@sanay.com.br"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	
@@ -34,7 +34,7 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
 	
-	$mail->AddAddress('contato@sanay.com.br', ' Sanay');
+	$mail->AddAddress('sanay@sanay.com.br', ' Sanay');
 	//$mail->AddAddress( 'operacional@mattar.com.br', 'Operacional - Mattar');
 	//$mail->AddAddress($email, $nome);
 	

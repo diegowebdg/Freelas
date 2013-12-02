@@ -10,9 +10,9 @@
 	$mensagem = utf8_decode($_POST['msg']);
 	$email_destino = '';
 	if($_POST['departamento']=='Administrativo'){
-	 	$email_destino = 'contato@sanay.com.br';
+	 	$email_destino = 'sanay@sanay.com.br';
 	} else{
-		$email_destino = 'contato@sanay.com.br';
+		$email_destino = 'sanay@sanay.com.br';
 	}						
 
 	// Inicia a classe PHPMailer
@@ -32,7 +32,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "contato@sanay.com.br"; // Seu e-mail
+	$mail->From = "sanay@sanay.com.br"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	
