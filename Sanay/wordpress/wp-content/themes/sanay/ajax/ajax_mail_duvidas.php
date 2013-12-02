@@ -16,9 +16,9 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	$mail->IsSMTP(); // Define que a mensagem será SMTP
-	$mail->Host = "mail.rafaelbianco.com.br"; // Endereço do servidor SMTP
+	$mail->Host = "mail.sanay.com.br"; // Endereço do servidor SMTP
 	$mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)							
-	$mail->Username = 'sanay@rafaelbianco.com.br'; // Usuário do servidor SMTP
+	$mail->Username = 'envios@sanay.com.br'; // Usuário do servidor SMTP
 	$mail->Password = 'sanay1q2w3e'; // Senha do servidor SMTP
 	
 	
@@ -26,7 +26,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "rafaelkae@gmail.com"; // Seu e-mail
+	$mail->From = "contato@sanay.com.br"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	
@@ -35,7 +35,7 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
 	
-	$mail->AddAddress('diego.webdg@gmail.com', ' Sanay');
+	$mail->AddAddress('envios@sanay.com.br', ' Sanay');
 	//$mail->AddAddress( 'operacional@mattar.com.br', 'Operacional - Mattar');
 	//$mail->AddAddress($email, $nome);
 	
@@ -65,6 +65,7 @@
 	$mail->Body .= "E-mail: ".$email."<br>";
 	$mail->Body .= "Telefone: ".$tel."<br>";
 	$mail->Body .= "Melhor Horário para ligar: ".$mensagem."<br><br><br>";
+	$mail->Body .= "<img src='http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /><br><br><br>";
 	
 	//$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
 	 

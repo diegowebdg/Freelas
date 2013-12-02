@@ -91,7 +91,7 @@
     	<!-- End of Content Menu -->
     	
         <!--Array dos posts-->
-        <div class="destaques" style="padding-bottom:90px;">
+        <div class="destaques" style="padding-bottom:50px;">
         	<div class="content-center">
                 <div class="page-margin">
                 

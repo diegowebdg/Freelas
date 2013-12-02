@@ -50,14 +50,18 @@
                     
                     <!--Image | Name | Status-->
                     <div class="img-name-status">
-                        <?php if( get_field('logo_empreendimento') ) {
-                            $logo_empreendimento = get_field('logo_empreendimento' ); ?>
-                            <img 
-                            src="<?php   echo $logo_empreendimento['url']; ?>"
-                            alt="<?php   echo $logo_empreendimento['alt']; ?>"
-                            title="<?php echo $logo_empreendimento['title']; ?>"
-                            >
-                        <?php } ?>
+                        <div class="img-empreendimento">
+                            <div class="relative">
+                                <?php if( get_field('logo_empreendimento') ) {
+                                    $logo_empreendimento = get_field('logo_empreendimento' ); ?>
+                                    <img 
+                                    src="<?php   echo $logo_empreendimento['url']; ?>"
+                                    alt="<?php   echo $logo_empreendimento['alt']; ?>"
+                                    title="<?php echo $logo_empreendimento['title']; ?>"
+                                    >
+                                <?php } ?>
+                            </div>
+                        </div>
                             
                             
                         <div class="name-status">
@@ -65,18 +69,59 @@
                             <div class="status">
                                 <span><strong>Fase: </strong> <span class="fase"><?php echo $category[0]->name; ?></span> <span class="separator">></span> <span class="address"><?php echo get_field('bairro'); ?></span></span>
                             </div>
+                            
+                            <!-- Share Buttons -->
+                            <div class="share-buttons">
+                                <div class="addthis_toolbox addthis_default_style ">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
+                                <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                                </div>
+                                <script type="text/javascript">
+                                    var addthis_config = addthis_config||{};
+                                    addthis_config.data_track_addressbar = false;
+                                    addthis_config.data_track_clickback = false;
+                                </script>
+                                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528859565f261904"></script>
+                            </div>
+                            <!-- End of Share Buttons -->
+                            
                         </div>
                         <div class="clear"></div>
                     </div>
                     <!-- End of Image | Name | Status -->
                     
                     <!--Fale com o corretor-->
-                    <a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')" class="corretor">Fale agora com nosso <br>corretor online</a>
+                    <?php
+                    
+                    $corretor_link = get_field( 'chat_link' );
+                    
+                    if( $corretor_link ): ?>
+                       <a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')" class="corretor">Fale agora com nosso <br>corretor online</a>
+                    
+                    <?php else : ?>
+                        
+                        <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" class="corretor" title="Corretores Online">Fale agora com nosso <br>corretor online</a>
+                    
+                    <?php endif; ?> 
                     <!--End of Fale com o corretor-->
                     
                     <!-- TABLET Fale com o corretor-->
                     <div class="tablet-corretor">
-                        <a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')">Fale agora com nosso corretor online</a>
+                        <?php
+                    
+                        $corretor_link = get_field( 'chat_link' );
+                        
+                        if( $corretor_link ): ?>
+                           <a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')">Fale agora com nosso corretor online</a>
+                        
+                        <?php else : ?>
+                            
+                            <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" class="corretor" title="Corretores Online">Fale agora com nosso corretor online</a>
+                        
+                        <?php endif; ?> 
+                        
                     </div>
                     <!--End of TABLET Fale com o corretor-->
                     <div class="clear"></div>
@@ -134,23 +179,6 @@
             
             <!-- Left Column -->
             <div class="left-column">
-                        
-                <!-- Share Buttons -->
-                <div class="share-buttons">
-                    <div class="addthis_toolbox addthis_default_style ">
-                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                    <a class="addthis_button_tweet"></a>
-                    <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
-                    <a class="addthis_counter addthis_pill_style"></a>
-                    </div>
-                    <script type="text/javascript">
-                        var addthis_config = addthis_config||{};
-                        addthis_config.data_track_addressbar = false;
-                        addthis_config.data_track_clickback = false;
-                    </script>
-                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528859565f261904"></script>
-                </div>
-                <!-- End of Share Buttons -->
                 
                 <!-- Main img | txt -->
                 <div class="main-img-txt">
@@ -171,22 +199,22 @@
                     <!-- Large Size -->
                     <div class="large-image animate">
                     		<?php $the_gallery_img =  get_field('galeria_1'); ?>
-                        <img src="<?php echo $the_gallery_img['sizes']['large'] ?>" alt="" title="<?php echo $the_gallery_img['title'] ?>">
+                        <img src="<?php echo $the_gallery_img['url'] ?>" alt="" title="<?php echo $the_gallery_img['title'] ?>" width="<?php echo $the_gallery_img['width'] ?>" heigth="<?php echo $the_gallery_img['height'] ?>">
                         <span><?php echo $the_gallery_img['title'] ?></span>
-                        <a href="<?php echo $the_gallery_img['sizes']['large'] ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
+                        <a href="<?php echo $the_gallery_img['url'] ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
                     </div>
                     <!-- End of Large Size -->
                     
                     <!-- Selectors -->
                     <div class="selectors">
-                        <a href="#" title="Anterior" class="prev selected animate">Anterior</a>
+                        <a href="#" title="Anterior" class="prev selected">Anterior</a>
                         <div class="thumbs">
                             <div class="viewport animate">
                                 <ul>
                                     <?php
                                 
                                         $gallery_img = array();
-                                        for($x=1;$x<=10;$x++)
+                                        for($x=1;$x<=25;$x++)
                                         {
                                             
                                             if(get_field('galeria_' . $x))
@@ -194,7 +222,7 @@
                                                 $galeria = get_field('galeria_' . $x);
                                                 $gallery_img[$x-1]["image"] = $galeria['sizes']['thumbnail'];
                                                 $gallery_img[$x-1]["title"] = $galeria['title'];
-                                                $gallery_img[$x-1]["link"] = $galeria['sizes']['large'];
+                                                $gallery_img[$x-1]["link"] = $galeria['url'];
                                             }
                                             else
                                             {
@@ -212,7 +240,7 @@
                                 <div class="clear"></div>
                             </div>
                         </div>
-                        <a href="#" title="Próxima" class="next link-padding animate">Próxima</a>
+                        <a href="#" title="Próxima" class="next link-padding">Próxima</a>
                         <div class="clear"></div>
                     </div>
                     <!-- End of Selectors -->
@@ -227,15 +255,20 @@
                     <!-- Large Size -->
                     <div class="large-image animate">
                     		<?php $the_planta_img =  get_field('planta_galeria_1'); ?>
-                        <img src="<?php echo $the_planta_img['sizes']['large'] ?>" alt="" title="<?php echo $the_planta_img['title'] ?>">
+                        <img src="<?php echo $the_planta_img['url'] ?>" alt="" title="<?php echo $the_planta_img['title'] ?>">
+                        
+                        <?php if( $the_planta_img['title'] ): ?>
+                        
                         <span><?php echo $the_planta_img['title'] ?></span>
-                        <a href="<?php echo $the_planta_img['sizes']['large'] ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
+                        <?php endif; ?>
+                        
+                        <a href="<?php echo $the_planta_img['url'] ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
                     </div>
                     <!-- End of Large Size -->
                     
                     <!-- Selectors -->
                     <div class="selectors">
-                        <a href="#" title="Anterior" class="prev selected animate">Anterior</a>
+                        <a href="#" title="Anterior" class="prev selected">Anterior</a>
                         <div class="thumbs">
                             <div class="viewport animate">
                                 <ul>
@@ -250,7 +283,7 @@
                                                 
                                                 $planta_gallery_img[$x-1]["image"] = $planta_array['sizes']['thumbnail'];
                                                 $planta_gallery_img[$x-1]["title"] = $planta_array['title'];
-                                                $planta_gallery_img[$x-1]["link"]  = $planta_array['sizes']['large'];
+                                                $planta_gallery_img[$x-1]["link"]  = $planta_array['url'];
                                             }
                                             else
                                             {
@@ -268,13 +301,22 @@
                                 <div class="clear"></div>
                             </div>
                         </div>
-                        <a href="#" title="Próxima" class="next link-padding animate">Próxima</a>
+                        <a href="#" title="Próxima" class="next link-padding">Próxima</a>
                         <div class="clear"></div>
                     </div>
                     <!-- End of Selectors -->
                     
                 </div>
                 <!-- End of Planta -->
+                
+                <!-- Localização -->
+                <div class="localizacao">
+                    <h2>Localização</h2>
+                    <?php $map = get_field('map');?>
+                    <p><?php echo $map['address']; ?></p>
+                    <iframe width="100%" height="372" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=pt&amp;geocode=&amp;q=<?php echo $map['coordinates']; ?>&amp;aq=&amp;sll=37.0625,-95.677068&amp;output=embed"></iframe>
+                </div>
+                <!-- End of Localização -->
                 
             </div>
             <!-- End of Left Column -->
@@ -311,14 +353,7 @@
             
             <div class="clear"></div>
             
-            <!-- Localização -->
-            <div class="localizacao">
-                <h2>Localização</h2>
-                <?php $map = get_field('map');?>
-                <p><?php echo $map['address']; ?></p>
-                <iframe width="100%" height="514" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=pt&amp;geocode=&amp;q=<?php echo $map['coordinates']; ?>&amp;aq=&amp;sll=37.0625,-95.677068&amp;output=embed"></iframe>
-            </div>
-            <!-- End of Localização -->
+            
             
             </div>
     	</div>
@@ -349,7 +384,7 @@
                                                         <span><?php echo $category[0]->cat_name; ?></span>
                                                     </div>
                                                     <div class="destaque-info">
-                                                        <h3><?php the_title(); ?></h3>
+                                                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                                         <span><?php echo get_field("bairro"); ?></span>
                                                         <p><?php echo get_field("description"); ?></p>
                                                     </div>

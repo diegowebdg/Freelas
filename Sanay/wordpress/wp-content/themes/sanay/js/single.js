@@ -23,7 +23,7 @@ $(document).ready(function(e) {
     
     
     /*Get the width of each <li>*/
-    var galleryViewportMargin = 0;
+    /*var galleryViewportMargin = 0;
     
     var liWidth    = $( ".gallery .viewport li").width();
     var liMargin   = $( ".gallery .viewport li").css("margin-right");
@@ -32,7 +32,7 @@ $(document).ready(function(e) {
         var widthTotal = 0;
     }
     var marginTotal = parseFloat(liMargin);
-    var liDistance  = widthTotal += marginTotal;
+    var liDistance  = widthTotal += marginTotal;*/
     /*End of Get the width of each <li>*/
     
     
@@ -40,9 +40,9 @@ $(document).ready(function(e) {
         e.preventDefault();
         currentImage--;
         changeImage();
-        var viewportMargin    = $(".gallery .viewport").css("margin-left");
-        galleryViewportMargin = parseFloat(viewportMargin) + parseFloat(liDistance) + "px";
-        $(".gallery .viewport").css("margin-left", galleryViewportMargin);
+        //var viewportMargin    = $(".gallery .viewport").css("margin-left");
+        //galleryViewportMargin = parseFloat(viewportMargin) + parseFloat(liDistance) + "px";
+        $(".gallery .viewport").css("margin-left", "+=141px");
         
         if($(".gallery .viewport").css("margin-left", "0px")){
             $( ".gallery .selectors .prev" ).addClass("selected");
@@ -53,14 +53,14 @@ $(document).ready(function(e) {
         e.preventDefault();
         currentImage++;
         changeImage();
-        var viewportMargin    = $(".gallery .viewport").css("margin-left");
-        galleryViewportMargin = parseFloat(viewportMargin) - parseFloat(liDistance) + "px";
-        $(".gallery .viewport").css("margin-left", galleryViewportMargin);
+        //var viewportMargin    = $(".gallery .viewport").css("margin-left");
+        //galleryViewportMargin = parseFloat(viewportMargin) - parseFloat(liDistance) + "px";
+        $(".gallery .viewport").css("margin-left", "-=141px");
     } );
     imageList[ currentImage ].element.addClass("selected");
     
     $(".gallery .selectors a").click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         for( key in imageList ) if( $(this).attr("href") == imageList[key].image ) currentImage = imageList[key].id;
         changeImage();
     });
@@ -89,6 +89,32 @@ $(document).ready(function(e) {
         }
         /*End of Tittle of large image*/
     }
+    /*Tittle of large image*/
+    var largeTitle = imageList[ currentImage ].element.children("img").attr("title");
+    if(largeTitle !== 'undefined' && largeTitle !== '' ){
+        $(".gallery .large-image span").remove();
+        $(".gallery .large-image").append("<span>" + largeTitle + "</span>");
+    } else{
+        $(".gallery .large-image span").remove();
+    }
+    /*End of Tittle of large image*/
+    
+    /*Prev/Next desappear if don't have 4 images*/
+    if($(".gallery .thumbs li").length <= 4){
+        $(".gallery .next, .gallery .prev").addClass("selected");
+    }
+    if($(".planta-gallery .thumbs li").length <= 4){
+        $(".planta-gallery .next, .gallery .prev").addClass("selected");
+    }
+    
+    if($(".gallery .thumbs li").length <= 1){
+        $(".gallery .selectors").hide();
+    }
+    if($(".planta-gallery .thumbs li").length <= 1){
+        $(".planta-gallery .selectors").hide();
+    }
+    /*End of Prev/Next desappear if don't have 4 images*/
+    
     
     /*End of Galery Thumbs - Link*/
     
@@ -144,7 +170,7 @@ $(document).ready(function(e) {
     if(plantacurrentImage != -1)plantaimageList[ plantacurrentImage ].element.addClass("selected");
     
     $(".planta-gallery .selectors a").click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         for( key in plantaimageList ) if( $(this).attr("href") == plantaimageList[key].image ) plantacurrentImage = plantaimageList[key].id;
         plantachangeImage();
     });
@@ -207,11 +233,13 @@ $(document).ready(function(e) {
     
     $(".detalhes-hover").click(function(e){
         setTimeout(lightboxMargin, 200);
-        event.preventDefault();
+        e.preventDefault();
         
         var detalhesLink = $(this).attr("href");
         $(".lightbox .lightbox-content img").attr("src", detalhesLink);
         $(".lightbox").fadeIn(300);
+        var maxHeightImg = $(window).height() - 50;
+        $(".lightbox .lightbox-content img").css({maxHeight:maxHeightImg});
     });
     /*End of Lightbox*/
     

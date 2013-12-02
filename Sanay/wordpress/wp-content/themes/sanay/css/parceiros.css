@@ -18,14 +18,6 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 .left-column .parceiro{border-top:solid 1px #d9d9d9; padding:30px 0;}
 .left-column .parceiro div{float:left;}
 .left-column .parceiro-img{border: solid 1px #d9d8d8; width:49%; height:132px; display:table; text-align:center;
-/*background: #ffffff;
-background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3));
-background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
-background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
-background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
-background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );*/
 }
 .left-column .relative{display:table-cell; text-align:center; float:none !important; vertical-align:middle;}
 .left-column .parceiro-img img{text-align:center; display:inline; width: 323px; height:150px !important; border: solid 1px #BBB;}
@@ -34,7 +26,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .left-column .parceiro-info span strong{font:bold 1em Oswald, Arial, sans-serif;}
 .left-column .parceiro-info span a{color:inherit; display:inline;}
 .left-column .parceiro-info span a:hover{text-decoration:underline; color:#e9821b}
-.left-column .parceiro-info .relative{padding:15%;}
+.left-column .parceiro-info .relative{padding:15% 0 15% 15%;}
 
 .right-column{float:right; width:31%;}
 

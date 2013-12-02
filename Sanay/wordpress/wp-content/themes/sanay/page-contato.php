@@ -162,7 +162,7 @@
                                                         <span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
                                                     </div>
                                                     <div class="destaque-info">
-                                                        <h3><?php the_title(); ?></h3>
+                                                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                                         <span><?php echo get_field("bairro"); ?></span>
                                                         <p><?php echo get_field("description"); ?></p>
                                                     </div>

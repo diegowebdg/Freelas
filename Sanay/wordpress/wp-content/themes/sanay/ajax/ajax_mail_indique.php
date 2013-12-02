@@ -16,9 +16,9 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	$mail->IsSMTP(); // Define que a mensagem será SMTP
-	$mail->Host = "mail.rafaelbianco.com.br"; // Endereço do servidor SMTP
+	$mail->Host = "mail.sanay.com.br"; // Endereço do servidor SMTP
 	$mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)							
-	$mail->Username = 'sanay@rafaelbianco.com.br'; // Usuário do servidor SMTP
+	$mail->Username = 'envios@sanay.com.br'; // Usuário do servidor SMTP
 	$mail->Password = 'sanay1q2w3e'; // Senha do servidor SMTP
 	
 	
@@ -26,7 +26,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "rafaelkae@gmail.com"; // Seu e-mail
+	$mail->From = "contato@sanay.com.br"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	
@@ -35,7 +35,7 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
 	
-	$mail->AddAddress('diego.webdg@gmail.com', ' Sanay');
+	$mail->AddAddress($amigo_email, ' Sanay');
 	//$mail->AddAddress('ciclano@site.net');
 	
 	//$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
@@ -54,14 +54,19 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->Subject  = "Dúvidas - Sanay Desenvolvimento Imobiliário"; // Assunto da mensagem
+	$mail->Subject  = "Seu amigo ".$seu_nome." te indicou a Sanay"; // Assunto da mensagem
 	
-	$mail->Body = "Contato através do site www.sanay.com.br: <br /><br/>";
 	
-	$mail->Body .= "Seu nome: ".$seu_nome."<br>";
-	$mail->Body .= "Seu e-mail: ".$seu_email."<br>";
-	$mail->Body .= "Nome do amigo: ".$amigo_nome."<br>";
-	$mail->Body .= "E-mail do amigo: ".$amigo_email."<br><br><br>";
+	$mail->Body .= "Olá <b>".$amigo_nome."</b>, seu amigo <b>".$seu_nome."</b> indicou os empreendimentos da Sanay para você. Acesse o site abaixo: <br /><br/>";
+	$mail->Body .= "<a href='http://www.sanay.com.br' target='_blank' style='font-family:Arial; font-size:30px; color:#e9821b'>www.sanay.com.br</a><br><br><br>";
+	
+	$mail->Body .= "Nome do seu amigo: ".$seu_nome."<br>";
+	$mail->Body .= "E-mail do seu amigo: ".$seu_email."<br>";
+	$mail->Body .= "Seu nome: ".$amigo_nome."<br>";
+	$mail->Body .= "Seu e-mail: ".$amigo_email."<br><br><br>";
+	
+	$mail->Body .= "<a href='http://www.sanay.com.br' target='_blank'><img src='http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /></a><br><br><br>";
+	
 	
 	//$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
 	 

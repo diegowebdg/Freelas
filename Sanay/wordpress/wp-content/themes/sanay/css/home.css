@@ -13,7 +13,7 @@ Author URI: http://www.diegowebdg.com.br
 .slider{ height: 458px;}
 .slider .slide-info, .slider img{float:left;}
 .slider *{text-transform:uppercase; display:block;}
-.slider .slide-info{padding:15px 89px;}
+.slider .slide-info{padding:30px 89px;}
 .slider .slide-info strong{font:bold 2em Oswald, Arial, sans-serif; color: #FFF;}
 .slider .slide-info span{margin:15px 0; font:italic 1.2em Oswald, Arial, sans-serif; color:#b4b4b4;}
 .slider .slide-info p{font:italic 1.4em Oswald, Arial, sans-serif; color: #FFF;}
@@ -32,14 +32,13 @@ Author URI: http://www.diegowebdg.com.br
 .content-menu li.entregues{background-image:url(../images/content-menu-entregues.png);}
 .content-menu li.bairro{background-image:url(../images/content-menu-bairro.png);}
 .content-menu li.corretor{box-shadow: #e9821b 0 -5px 0; 
-background: #ffb76f url(../images/content-menu-corretor-online.png) no-repeat center 23px, center center;
+background: #ffb76f url(../images/content-menu-corretor-online.png) no-repeat center 23px;
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/content-menu-corretor-online.png) no-repeat center 23px, center center linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
 }
 .content-menu li.corretor:hover{background:#e7851a url('../images/content-menu-corretor-online.png') no-repeat center 23px !important}
 .content-menu li.corretor a{text-shadow:#7f4c18 1px 1px 0; font-size:1.35em; line-height:1.4em;}
@@ -118,6 +117,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .camera_prev{height: 70px !important; width: 35px !important; margin-top:-26px !important;}
 .camera_next > span{background: url(../images/slider-home-next-mobile.png) no-repeat 0 0 !important; height: 70px !important; width: 35px !important;}
 .camera_prev > span{background: url(../images/slider-home-prev-mobile.png) no-repeat 0 0 !important; height: 70px !important; width: 35px !important;}
+
+/*Destaques*/
+.destaques #bairros-list-content, .destaques .result{position:static !important; margin-bottom:10px !important; display:block !important;}
 
 }
 

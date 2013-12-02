@@ -6,25 +6,26 @@ Author: Diego Rocha
 Author URL: http://www.diegowebdg.com.br
 */
 
-#content{padding-bottom: 50px;}
+.destaques{padding-bottom: 90px;}
 h1, h2{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c; margin:0 0 29px 0;}
 .linha{width:100%; border-top: 1px solid #e5e5e5; margin:15px 0;}
 
-.img-name-status img{float:left; margin-right:2.5%; max-width:175px;}
-.img-name-status .name-status h1{margin-bottom:13px !important;}
-.img-name-status .name-status .status{background-color:#ebebeb; border-radius:4px; box-shadow:#757575 0 -4px 0; display:table; padding:15px 13px;}
+.img-name-status .img-empreendimento{float:left; margin-right:2.5%; width:198px; min-height:166px;}
+.img-name-status .img-empreendimento .relative{display:table-cell; height:166px; vertical-align:middle; width:198px;}
+.img-name-status .img-empreendimento img{max-width:198px; display:table-cell; vertical-align:middle; margin:0 auto;}
+.img-name-status .name-status h1{margin:4px 0 13px 0 !important;}
+.img-name-status .name-status .status{background-color:#ebebeb; border-radius:4px; box-shadow:#757575 0 -4px 0; display:table; padding:15px 13px; margin-bottom:32px;}
 .img-name-status .name-status .status *{color:#000; font-size:16px; text-transform:uppercase; font-style:italic;}
 .img-name-status .name-status .status strong{font-style:normal !important; font-weight:bold;}
 .img-name-status .separator{color:#b0b0b0 !important; font-size:20px !important; margin: 0 5px;}
 .main-info .corretor{font:bold 1.9em Oswald, Arial, sans-serif; text-transform:uppercase; color:#FFF; text-shadow:#7f4c18 1px 1px 0; display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; float:right; padding:25px 0 25px 76px; width: 23.7%;
-background: #ffb76f;
+background: #ffb76f url(../images/corretor-icon-interna.png) 20px center no-repeat;
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
 background: url(../images/corretor-icon-interna.png) 20px center no-repeat, linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
 }
 .main-info .corretor:hover{background:#e9821b url(../images/corretor-icon-interna.png) 20px center no-repeat;}
 
@@ -72,9 +73,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 
 
 /*Gallery*/
-.left-column .gallery, .left-column .planta-gallery{margin-bottom:40px;}
-.left-column .planta-gallery{margin-top:75px;}
-.left-column .gallery .large-image, .left-column .planta-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden;}
+.left-column .gallery, .left-column .planta-gallery{margin-bottom:40px; padding-bottom: 50px; border-bottom: solid 1px #CCC;}
+.left-column .gallery{ }
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden; min-height:370px; border: solid 1px #CCC;}
 .left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{width:100%; padding-top:370px; position:absolute; background:url(../images/ampliar-foto.png) no-repeat center; top:0; left:0; opacity:0;}
 .left-column .gallery .large-image span, .left-column .planta-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}
 .left-column .gallery .large-image img, .left-column .planta-gallery .large-image img{width:100%;}
@@ -83,10 +84,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .selectors{width:100%;}
 .selectors .viewport{width:3000px;}
 .selectors .thumbs{position:relative; overflow:hidden; width:83%; float:left;}
-.selectors .viewport li{display:block; float:left; margin-right:14px;}
-.selectors .viewport li a{opacity:0.7;}
+.selectors .viewport li{display:block; float:left; margin-right:11px; border: solid 1px #CCC;}
+.selectors .viewport li a{opacity:0.3;}
+.selectors .viewport li a:hover{opacity:1;}
 .selectors .prev, .selectors .next{width:7.9%; height:35px; position:relative; display:block; background-image:url(../images/gallery-selectors.png); background-repeat:no-repeat; text-indent:-9999px; margin-top:45px;}
-.selectors .prev:hover, .selectors .next:hover{opacity:0.7;}
+.selectors .prev:hover{background-position:left -36px;} 
+.selectors .next:hover{background-position:right -36px;}
 .selectors .prev{float:left;}
 .selectors .next{float:right; background-position:right top;}
 .selectors .prev.selected, .selectors .next.selected{opacity:0; pointer-events:none;}
@@ -94,7 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 
 /*Ficha Técnica*/
 .right-column{float:right; width:31%;}
-.ficha-tecnica{background-color:#ebebeb; border-radius:5px; box-shadow:#757575 0 -5px 0; margin-bottom:20px; padding: 8.14% 9.77%}
+.ficha-tecnica{background-color:#ebebeb; border-radius:5px; box-shadow:#757575 0 -5px 0; margin:-80px 0 20px 0; padding: 8.14% 9.77%}
 .ficha-tecnica .mobile-expand{background:url(../images/menu-expand.png) no-repeat; width:33px; height:29px; position:absolute; top:24px; right:20px; display:none;}
 .ficha-tecnica h2{font:italic 2em Oswald, Arial, sans-serif; color:#003c4e; background:url(../images/ficha-tecnica.png) no-repeat left center; padding-left:40px; margin-bottom:0 !important;}
 .ficha-tecnica ul{margin-top:29px;}

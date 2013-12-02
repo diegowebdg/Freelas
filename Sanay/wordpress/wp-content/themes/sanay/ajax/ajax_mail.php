@@ -10,9 +10,9 @@
 	$mensagem = utf8_decode($_POST['msg']);
 	$email_destino = '';
 	if($_POST['departamento']=='Administrativo'){
-	 	$email_destino = 'rafaelkae@gmail.com';
+	 	$email_destino = 'contato@sanay.com.br';
 	} else{
-		$email_destino = 'rafaelkae@gmail.com';
+		$email_destino = 'contato@sanay.com.br';
 	}						
 
 	// Inicia a classe PHPMailer
@@ -22,9 +22,9 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	$mail->IsSMTP(); // Define que a mensagem será SMTP
-	$mail->Host = "mail.rafaelbianco.com.br"; // Endereço do servidor SMTP
+	$mail->Host = "mail.sanay.com.br"; // Endereço do servidor SMTP
 	$mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)							
-	$mail->Username = 'sanay@rafaelbianco.com.br'; // Usuário do servidor SMTP
+	$mail->Username = 'envios@sanay.com.br'; // Usuário do servidor SMTP
 	$mail->Password = 'sanay1q2w3e'; // Senha do servidor SMTP
 	
 	
@@ -32,7 +32,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->From = "sanay@rafaelbianco.com.br"; // Seu e-mail
+	$mail->From = "contato@sanay.com.br"; // Seu e-mail
 	$mail->FromName = "Sanay - Desenvolvimento Imobiliário"; // Seu nome
 	 
 	
@@ -63,7 +63,7 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->Subject  = "Dúvidas - Sanay Desenvolvimento Imobiliário"; // Assunto da mensagem
+	$mail->Subject  = "Fale conosco - Sanay Desenvolvimento Imobiliário"; // Assunto da mensagem
 	
 	$mail->Body = "Contato através do site www.sanay.com.br: <br />";
 	
@@ -72,6 +72,7 @@
 	$mail->Body .= "Telefone: ".$tel."<br>";
 	$mail->Body .= "Celular: ".$cel."<br>";
 	$mail->Body .= "Mensagem: ".$mensagem."<br><br><br>";
+	$mail->Body .= "<img src='http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /><br><br><br>";
 	
 	//$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
 	 

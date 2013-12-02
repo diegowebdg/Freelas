@@ -42,7 +42,7 @@
                    if( $images ):
                  ?>
                                                                         
-                     <img src="<?php echo $image[ 'sizes' ][ 'large' ]; ?>" alt="" title="">
+                     <img src="<?php echo $image[ 'sizes' ][ 'full' ]; ?>" alt="" title="" width="<?php echo $image['width'] ?>" heigth="<?php echo $image['height'] ?>">
                      
                  <?php
                     endif;

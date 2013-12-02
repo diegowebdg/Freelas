@@ -1,0 +1,203 @@
+/*
+Theme Name: Sanay
+Theme URI: http://wwwsanay.com.br/
+Description: Sanay | Desenvolvimento Imobiliário
+Author: Diego Rocha
+Author URL: http://www.diegowebdg.com.br
+*/
+
+#content{padding-bottom: 50px;}
+h1, h2{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:#00789c; margin:0 0 29px 0;}
+.linha{width:100%; border-top: 1px solid #e5e5e5; margin:15px 0;}
+
+.img-name-status .img-empreendimento{float:left; margin-right:2.5%; width:198px; min-height:166px; background-color:#000;}
+.img-name-status .img-empreendimento .relative{display:table-cell; height:166px; vertical-align:middle; width:198px;}
+.img-name-status .img-empreendimento img{max-width:198px; display:table-cell; vertical-align:middle; margin:0 auto;}
+.img-name-status .name-status h1{margin:4px 0 13px 0 !important;}
+.img-name-status .name-status .status{background-color:#ebebeb; border-radius:4px; box-shadow:#757575 0 -4px 0; display:table; padding:15px 13px; margin-bottom:32px;}
+.img-name-status .name-status .status *{color:#000; font-size:16px; text-transform:uppercase; font-style:italic;}
+.img-name-status .name-status .status strong{font-style:normal !important; font-weight:bold;}
+.img-name-status .separator{color:#b0b0b0 !important; font-size:20px !important; margin: 0 5px;}
+.main-info .corretor{font:bold 1.9em Oswald, Arial, sans-serif; text-transform:uppercase; color:#FFF; text-shadow:#7f4c18 1px 1px 0; display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; float:right; padding:25px 0 25px 76px; width: 23.7%;
+background: #ffb76f;
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: url(../images/corretor-icon-interna.png) 20px center no-repeat, linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
+}
+.main-info .corretor:hover{background:#e9821b url(../images/corretor-icon-interna.png) 20px center no-repeat;}
+
+.main-info .tablet-corretor{ display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:4px 0; width:100%; display:none;
+background: #ffb76f;
+background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
+background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
+}
+.main-info .tablet-corretor a{font:bold 1.9em Oswald, Arial, sans-serif; text-transform:uppercase; color:#FFF; text-shadow:#7f4c18 1px 1px 0; display: table; margin: 0 auto; background:url(../images/corretor-icon-interna-tablet.png) no-repeat left center;padding-left:35px;}
+
+.mobile-main-info{display:none;}
+.mobile-main-info .mobile-logo{background-color:#000; margin-bottom:5px;}
+.mobile-main-info .mobile-logo img{float:none; display:table; margin:0 auto;}
+.mobile-main-info .name-status, .mobile-main-info .name-status .status{width:100%; padding: 15px 0;}
+.mobile-main-info .name-status, .mobile-main-info .name-status .status .first{display:table; margin:0 auto;}
+.mobile-main-info .mobile-corretor{ border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:4px 0; width:100%;
+background: #ffb76f;
+background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
+background: -webkit-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -o-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: -ms-linear-gradient(top,  #ffb76f 0%,#e9821b 100%);
+background: linear-gradient(to bottom,  #ffb76f 0%,#e9821b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', endColorstr='#e9821b',GradientType=0 );
+}
+.mobile-main-info .mobile-corretor a{font:bold 1.4em Oswald, Arial, sans-serif; text-transform:uppercase; color:#FFF; text-shadow:#7f4c18 1px 1px 0; display: table; margin: 0 auto; background:url(../images/corretor-icon-interna-tablet.png) no-repeat left center;padding:3px 0 0 35px; height: 24px;}
+
+
+
+
+
+
+.left-column, .right-column{margin-bottom:50px;}
+.left-column, .img-name-status{float:left; width:66%}
+
+.left-column h2{ margin-bottom:25px;}
+.left-column .main-img-txt{margin-bottom:40px;}
+.left-column .main-img-txt img{ margin:0 2.2% 2.2% 0; float:left; width:42.8%;}
+.left-column p{font:1.4em/2em Tahoma, Arial, sans-serif !important; color:#676767; margin-bottom:30px; text-align:justify;}
+
+
+/*Gallery*/
+.left-column .gallery, .left-column .planta-gallery{margin-bottom:40px; padding-bottom: 50px; border-bottom: solid 1px #CCC;}
+.left-column .gallery{ }
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden; min-height:370px; border: solid 1px #CCC;}
+.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{width:100%; padding-top:370px; position:absolute; background:url(../images/ampliar-foto.png) no-repeat center; top:0; left:0; opacity:0;}
+.left-column .gallery .large-image span, .left-column .planta-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}
+.left-column .gallery .large-image img, .left-column .planta-gallery .large-image img{width:100%;}
+
+/*Gallery Selectors*/
+.selectors{width:100%;}
+.selectors .viewport{width:3000px;}
+.selectors .thumbs{position:relative; overflow:hidden; width:83%; float:left;}
+.selectors .viewport li{display:block; float:left; margin-right:11px; border: solid 1px #CCC;}
+.selectors .viewport li a{opacity:0.7;}
+.selectors .prev, .selectors .next{width:7.9%; height:35px; position:relative; display:block; background-image:url(../images/gallery-selectors.png); background-repeat:no-repeat; text-indent:-9999px; margin-top:45px;}
+.selectors .prev:hover{background-position:left -36px;} 
+.selectors .next:hover{background-position:right -36px;}
+.selectors .prev{float:left;}
+.selectors .next{float:right; background-position:right top;}
+.selectors .prev.selected, .selectors .next.selected{opacity:0; pointer-events:none;}
+.selectors .viewport a.selected{opacity:1 !important;}
+
+/*Ficha Técnica*/
+.right-column{float:right; width:31%;}
+.ficha-tecnica{background-color:#ebebeb; border-radius:5px; box-shadow:#757575 0 -5px 0; margin:-80px 0 20px 0; padding: 8.14% 9.77%}
+.ficha-tecnica .mobile-expand{background:url(../images/menu-expand.png) no-repeat; width:33px; height:29px; position:absolute; top:24px; right:20px; display:none;}
+.ficha-tecnica h2{font:italic 2em Oswald, Arial, sans-serif; color:#003c4e; background:url(../images/ficha-tecnica.png) no-repeat left center; padding-left:40px; margin-bottom:0 !important;}
+.ficha-tecnica ul{margin-top:29px;}
+.ficha-tecnica li{list-style-type:disc; margin-left:4.88%; margin-bottom:18px;}
+.ficha-tecnica li, .ficha-tecnica li *{ color:#5e5e5e; font: 12px Tahoma, Arial, sans-serif !important;}
+.ficha-tecnica li strong{font-weight:bold !important;}
+.ficha-tecnica a{display:inline;}
+.ficha-tecnica pre{display:inline;}
+.ficha-tecnica .block{display:block;}
+.ficha-tecnica .acesse{color:#ff9b37}
+.ficha-tecnica .acesse:hover{color:#024e65; text-decoration:underline}
+
+/*Localicação*/
+.localizacao{margin-bottom:40px;}
+.localizacao h2{margin-bottom:10px;}
+.localizacao p{font:1.4em Tahoma, Arial, sans-serif !important; color:#676767; margin-bottom:25px;}
+.localizacao iframe{max-width:100%; }
+
+/* ----------------------- AND... Make it responsible! ------------------*/
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    
+/*Img Name Status*/
+.img-name-status{float:none; max-width:100%; width:100%; margin-bottom:25px;}
+.main-info .corretor{display:none;}
+.main-info .tablet-corretor{display:block; text-align:center;}
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:90px;}
+.right-column{margin-bottom:20px;}
+.left-column img{width:100%;}
+
+/*Gallery*/
+.selectors .viewport li{margin-right:15px;}
+
+/*Encontre Imóveis*/
+.ficha-tecnica{float:left; width:31%;}
+.options{float:right; width:45%;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+}
+
+/* End of Tablet */
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+/*The Content Center | Page Margin*/
+.content-center{max-width: 480px; min-width:320px;}
+.page-margin{margin:0 5%;}
+
+/*Columns*/
+.left-column, .right-column{float:none; width:100%; max-width:100%; margin-bottom:40px;}
+
+/*Navigation*/
+.main-info{display:none;}
+.mobile-main-info{display:block;}
+
+/*Name | Status*/
+.left-column, .img-name-status{float:none; width:100%;}
+
+/*Post Content*/
+.left-column .main-img-txt img{float:none; width:100%; margin-bottom:25px;}
+
+/*Gallery's*/
+.left-column .gallery, .left-column .planta-gallery{position:relative;}
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image{max-height:243px;}
+.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{padding-top:243px;}
+.thumbs{display:none;}
+.selectors{width:100px; position:absolute; top:0; right:5px;}
+.selectors .prev, .selectors .next{width:43px; margin-top:0;}
+
+/*Ficha técnica*/
+.ficha-tecnica{position:relative;}
+.ficha-tecnica .mobile-expand{display:block;}
+.ficha-tecnica ul{position:relative; overflow:hidden; height:0; margin-top:0;}
+.ficha-tecnica ul.active{height:auto; margin-top:29px;}
+
+/*Map*/
+.localizacao iframe{ height:240px;}
+
+/*Destaques*/
+.destaques{background-color:#FFF; margin-bottom:30px;}
+
+
+}
+
+/* End of Mobile */
+
+/* Navigation | Info Only | Gallery */
+@media screen and (min-width: 320px) and (max-width: 430px) {
+
+.navigation *{font-size:9px;}
+.navigation .right a{padding-left:27px;}
+.img-name-status .name-status .status *{font-size:15px;}
+
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image {max-height: 163px;}
+.left-column .planta-gallery h2{margin-bottom: 60px;}
+.left-column .planta-gallery .selectors{top:60px;}
+}
